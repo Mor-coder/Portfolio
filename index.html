@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mor is a user experience /user interaction designer with front-end engineering skills based in London, UK. She has a multidiscplinary background having worked for many years in the art sector. She is interested in the crossing over of technology and art and how technology can improve people's life. She is keen on creative meaningful experiences through the use of technology."
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6d221f4f88.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/x-icon" href="img/favicon.svg" />
+    <title>Hi there 🌼| Mor Shmueli | UX|UI designer</title>
+  </head>
+  <body>
+
+  <!-- Leaf animation container -->
+<div class="leaves-container"></div>
+
+<script>
+  const container = document.querySelector('.leaves-container');
+  const numberOfLeaves = 12; // Adjust number of leaves here
+
+  for (let i = 0; i < numberOfLeaves; i++) {
+    const leaf = document.createElement('div');
+    leaf.classList.add('leaf');
+    
+    // Random positions and speeds
+    const size = 20 + Math.random() * 25;
+    const duration = 10 + Math.random() * 10;
+    const delay = Math.random() * 5;
+    
+    leaf.style.width = `${size}px`;
+    leaf.style.height = `${size}px`;
+    leaf.style.top = `${Math.random() * 60 + 30}vh`; // near bottom
+    leaf.style.left = `${-100 - Math.random() * 200}px`; // start off-screen
+    leaf.style.animationDuration = `${duration}s`;
+    leaf.style.animationDelay = `${delay}s`;
+    leaf.style.transform = `rotate(${Math.random() * 360}deg)`;
+    
+    container.appendChild(leaf);
+  }
+</script>
+    
+    <div class="container">
+      <div class="Header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <a class="navbar-brand" href="#"> 
+              <img src="/img/logo.svg" alt="Logo" width="60" height="48">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                <a class="nav-link" href="/projects.html">Featured Projects</a>
+                <a class="nav-link" href="/about.html">About</a>
+                <a class="nav-link" href="/contact.html">Contact</a>
+              </div>
+            </div>
+        </nav>
+        <div class="intro">
+          <div> 
+            <h1>Hi there, I'm Mor Shmueli.</h1>
+          </div>
+          <div>
+          <h1>UX/UI designer & yoga teacher.</h1>
+          </div>
+          <div>
+           <h2>I bring creativity, empathy, and accessibility from the screen to the studio.</h>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
