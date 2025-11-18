@@ -3,6 +3,11 @@
     --title-color: #212529;
     --box-shadow: 3px 1px 5px rgb(143, 141, 141);
     --branding-font: "Montserrat", sans-serif;
+    --background: #fcf9f9; 
+  }
+
+ .body {
+    background-color: var(--background);
   }
   
   .Header {
@@ -27,8 +32,27 @@
   }
 
   .navbar a:hover {
-    color: purple;
-    text-decoration: overline;;
+    color: rgb(189, 57, 5);
+    text-decoration: overline;
+  }
+
+  .backlink {
+    color: var(--title-color);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .backlink a:hover {
+    text-decoration: overline;
+  }
+
+  .read_more {
+    color: var(--title-color);
+
+  }
+
+  .read_more a{
+    text-decoration: underline;
   }
 
 
@@ -38,15 +62,83 @@
   }
 
   h2 {
-    font-size: 2rem;;
+    font-size: 3rem;;
   }
   
+  h3 {
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  .subtitle {
+    color: #646464;
+  }
+
   .intro {
     margin: 0 auto;
     margin-top: 15%;
     text-align: left;
   }
   
+.index {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  text-align:center;
+}
+
+.index a {
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+.index a:hover {
+  text-decoration: underline;
+  color: rgb(250, 72, 1);
+}
+
+.index_number, 
+.bi-1-square, 
+.bi-2-square, 
+.bi-3-square,
+.bi-4-square {
+  color:rgb(250, 72, 1);
+}
+
+
+#summary {
+  display: flex;
+  justify-content: space-between;
+margin-top: 10%;
+}
+
+#designing_the_assistant, 
+#challenges,
+#notes,
+#buttons,
+#tabs,
+#icons, 
+#cards, 
+#menus,
+#UIexplanation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs_list, 
+.icons_list {
+  text-align: start;
+  list-style: none;
+}
+
+.UIexplanation {
+  display: block;
+  margin: 0 auto;
+  padding: 24px;
+}
+
   .footer {
     background-color: var(--text-color);
     margin-top: 10%;
