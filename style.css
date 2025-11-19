@@ -74,7 +74,7 @@
   }
 
   .subtitle {
-    color: #646464;
+    color: #444444;
   }
 
   .intro {
@@ -137,6 +137,11 @@ margin-top: 10%;
   display: block;
   margin: 0 auto;
   padding: 24px;
+}
+
+.aboutme {
+  margin: 0 auto;
+  border-radius: 12px;
 }
 
   .footer {
