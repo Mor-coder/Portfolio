@@ -143,6 +143,10 @@ margin-top: 10%;
   margin: 0 auto;
   border-radius: 12px;
 }
+
+.yogauxlist {
+  list-style:circle;
+}
   
   .fas,
   .fab {
