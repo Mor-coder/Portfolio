@@ -32,7 +32,7 @@
   }
 
   .navbar a:hover {
-    color: rgb(189, 57, 5);
+    color: rgb(248, 74, 5);
     text-decoration: overline;
   }
 
@@ -111,6 +111,7 @@
 
 .projectstabs a.active {
   text-decoration: overline;
+  color: rgb(248, 74, 5);
 }
 
 .projectstabs a:not(.active)hover {
