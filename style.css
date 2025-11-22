@@ -48,12 +48,14 @@
 
   .arrow_top {
     display: block;
-    text-align: end;
-  }
-  .top {
+    text-align: end;   
     color: var(--title-color);
-    font-size: larger;
   }
+
+  .bi-arrow-up-square {
+    width: 1em;
+  }
+
 
   .line {
    padding: 2px;
@@ -96,6 +98,24 @@
 .weatherappindex {
   margin: 0 auto;
   border-radius: 12px;
+}
+
+.projectstabs {
+  display: inline-flex;
+}
+
+.projectstabs a {
+  color: var(--title-color);
+  text-decoration: none;
+}
+
+.projectstabs a:hover {
+  text-decoration: overline;
+}
+
+.divider {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
   .intro {
