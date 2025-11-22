@@ -109,8 +109,12 @@
   text-decoration: none;
 }
 
-.projectstabs a:hover {
+.projectstabs a.active {
   text-decoration: overline;
+}
+
+.projectstabs a:not(.active)hover {
+text-decoration: overline;
 }
 
 .divider {
