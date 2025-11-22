@@ -1,3 +1,4 @@
+/*
 const container = document.querySelector('.leaves-container');
 const numberOfLeaves = 12;
 
@@ -22,3 +23,4 @@ for (let i = 0; i < numberOfLeaves; i++) {
 
   container.appendChild(leaf);
 }
+*/
