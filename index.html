@@ -49,30 +49,7 @@
   <!-- Leaf animation container -->
 <div class="leaves-container"></div>
 
-<script>
-  const container = document.querySelector('.leaves-container');
-  const numberOfLeaves = 12; // Adjust number of leaves here
-
-  for (let i = 0; i < numberOfLeaves; i++) {
-    const leaf = document.createElement('div');
-    leaf.classList.add('leaf');
-    
-    // Random positions and speeds
-    const size = 20 + Math.random() * 25;
-    const duration = 10 + Math.random() * 10;
-    const delay = Math.random() * 5;
-    
-    leaf.style.width = `${size}px`;
-    leaf.style.height = `${size}px`;
-    leaf.style.top = `${Math.random() * 60 + 30}vh`; // near bottom
-    leaf.style.left = `${-100 - Math.random() * 200}px`; // start off-screen
-    leaf.style.animationDuration = `${duration}s`;
-    leaf.style.animationDelay = `${delay}s`;
-    leaf.style.transform = `rotate(${Math.random() * 360}deg)`;
-    
-    container.appendChild(leaf);
-  }
-</script>
+<script src="/script.js"></script>
     
     <div class="container">
       <div class="Header">
