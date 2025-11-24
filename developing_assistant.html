@@ -94,9 +94,6 @@
  <span>
     <a href="#challenges"><h4>Challenges & Solutions 02</h4></a>
  </span>
- <span>
-    <a href="#notes"><h4>Notes 03</h4></a>
- </span>
 </div>
 
 <div id="summary">
@@ -175,11 +172,12 @@
 <p>
     The surge of interest in AI has accelerated not only its technical evolution but also the refinement of its language — allowing machines to communicate their reasoning in ways that are increasingly understandable to humans.
 
-Watching this shift unfold has been fascinating: as AI became more transparent in its “thinking,” people’s perception of it began to change — from cautious skepticism to genuine curiosity and trust. In my observation, the ability to follow the AI’s reasoning process gives users a greater sense of control, as they can trace how conclusions are formed and even question certain outcomes.
+Watching this shift unfold has been fascinating: as AI became more transparent in its “thinking,” people’s perception of it began to change — from cautious skepticism to genuine curiosity and trust. <br/>
+</p>
 
-Ultimately, what has become evident is that while AI is an incredibly powerful tool, it still requires guidance, training, and human oversight to perform tasks effectively and responsibly.
+<p> In my observation, the ability to follow the AI’s reasoning process gives users a greater sense of control, as they can trace how conclusions are formed and even question certain outcomes. <strong>Ultimately, what has become evident is that while AI is an incredibly powerful tool, it still requires guidance, training, and human oversight to perform tasks effectively and responsibly.</strong></p>
 
-As the AI assistant is the core feature of the MosaiQ web app, our goal was to create an interface that felt both intuitive and adaptable, able to evolve alongside users’ needs and the fast-paced growth of AI technology.
+<p> As the AI assistant is the core feature of the MosaiQ web app, our goal was to create an interface that felt both intuitive and adaptable, able to evolve alongside users’ needs and the fast-paced growth of AI technology.
 </p>
 
 <div id="challenges" class="mt-5">
@@ -326,7 +324,7 @@ As the AI assistant is the core feature of the MosaiQ web app, our goal was to c
             <p><strong>These modules are powerful because they can be tailored to the unique needs of each user.</strong>For instance, a module could review a selected document, analyse previously defined parameters, and generate the outcome in a required format.
             </p>
             <p>By automating the first step of the analysis, AI modules speed up the workflow and free users to focus on the next stages of their work.</p>
-            <a href="/"><p class="mt-5">Read more about AI modules</p></a>
+            <a href="/"><p class="read_more mt-5">Read more about AI modules</p></a>
         </div>
         <div class="col-sm-6">
             <img src="/img/aimodules.svg" alt="UI showing AI modules opened in the assistant" class="img-fluid">
@@ -339,7 +337,7 @@ As the AI assistant is the core feature of the MosaiQ web app, our goal was to c
             <p><strong>Templates are among the earliest features in MosaiQ, providing the structure for research outputs.</strong></p>
             <p>At first, they were fully flexible: users could add or reorder sections and subsections as their work evolved, supporting an iterative research process.</p>
             <p>Later, we experimented with combining templates and AI modules, enabling users to run an AI module and have its output automatically formatted within the chosen template — streamlining the workflow even further.</p>
-            <a href="/"><p class="mt-5">Read more about Templates</p></a>
+            <a href="/"><p class="read_more mt-5">Read more about Templates</p></a>
         </div>
         <div class="col-sm-6">
                     <img src="/img/templates.svg" alt="UI showing an iteration of the template tool" class="img-fluid">
@@ -356,7 +354,7 @@ As the AI assistant is the core feature of the MosaiQ web app, our goal was to c
 <p>Influenced by the ChatGPT design, we’ve iterated on various versions but at this stage we agreed that: </p>
 
 <p><strong>The thinking process should be triggered (not display by default)</strong></p>
-<p>The Logic button - We added the btn “Logic” on the top of the Assistant Action panel, just above the text placeholder. The button triggers the AI to show their thinking process. </p>
+<p><strong>The Logic button -</strong> We added the btn “Logic” on the top of the Assistant Action panel, just above the text placeholder. The button triggers the AI to show their thinking process. </p>
         <p><strong>User should be able to close/hide the thinking process</strong></p>
         <p>The Thinking Process can be displayed in two ways:</p>
         <ul>  
@@ -373,10 +371,10 @@ As the AI assistant is the core feature of the MosaiQ web app, our goal was to c
         <div class="col-sm-6">
             <img src="img/assistant_thinking.svg" alt="UI showing the assistant thinking process in the main chat" class="img-fluid">
            <div class="row assistant_sidepanel">
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <img src="img/assistant_sidepanel_left.svg" alt="UI showing the assistant thinking process in the left side panel" class="img-fluid">
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6">
                 <img src="img/assistant_side_right.svg" alt="UI showing the assistant thinking process in the right side panel" class="img-fluid">
             </div>
         </div>
@@ -392,31 +390,41 @@ As the AI assistant is the core feature of the MosaiQ web app, our goal was to c
             <p>As the Assistant’s replies grew more advanced, users began expecting a more human, conversational way to engage with it. During Beta testing, many expressed the desire to ask follow-up questions about specific parts of a response — to steer the conversation in multiple directions, just like in a real dialogue. </p>
             <p><strong>Design Inspiration: </strong></p>
             <p>
-                To address this need for more natural, contextual follow-ups, we began exploring interaction patterns that would allow users to reference specific parts of a response seamlessly.
+                To address this need for more natural, contextual follow-ups, we began exploring interaction patterns that would allow users to reference specific parts of a response seamlessly.<br/></p>
 
-The idea was first inspired by WhatsApp’s reply-to-message feature, where users can select and respond to individual chat bubbles. We initially explored replicating this behaviour, but since the Assistant’s responses weren’t structured in separate bubbles, allowing users to highlight text directly felt far more natural.
+<p>The idea was first inspired by WhatsApp’s reply-to-message feature, where users can select and respond to individual chat bubbles. We initially explored replicating this behaviour, but since the Assistant’s responses weren’t structured in separate bubbles, allowing users to highlight text directly felt far more natural.<br/></p>
 
-At the same time, ChatGPT was introducing a similar interaction model. Because our interface aligned closely with theirs in both look and function — and this behaviour was quickly becoming a familiar convention — adopting a comparable solution felt like the most intuitive and user-friendly choice.
-
-            </p>
+<p>At the same time, ChatGPT was introducing a similar interaction model. Because our interface aligned closely with theirs in both look and function — and this behaviour was quickly becoming a familiar convention — adopting a comparable solution felt like the most intuitive and user-friendly choice.</p>
             <p><small><i>NB: This feature has not been developed yet.</i>  </small></p>
         </div>
         <div class="col-sm-6">
             <img src="/img/assistant_reply.svg" alt="UI showing the assistant replying to a highlighted segment of text" class="img-fluid">
         </div>
     </div>     
-    <hr>
+ 
+
+    <!---
     <div id="notes" class="mt-5">
         <h4>Notes</h4>
         <h4 class="index_number">03</h4>
     </div>
+    --->
 
 
-<div class="arrow_top">
-    <a href="#top">
-    <i class="bi bi-arrow-up-square top"></i>
-  </a>
-</div>
+    <div class="arrow_top">
+        <a href="#top">
+        <i class="bi bi-arrow-up-square top"></i>
+      </a>
+    </div>   
+    
+    <hr>
+    
+    <div class="arrow_right">
+        <a href="/projectpage_assistinterct.html"><p class="nextproject">Next project
+            <i class="bi bi-arrow-right-short"></i></p>
+      </a>
+    </div>  
+
 
 <div class="copyright">       
     <p class="mt-3">

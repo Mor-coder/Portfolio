@@ -1,7 +1,6 @@
 :root {
     --text-color: #343434;
     --title-color: #212529;
-    --box-shadow: 3px 1px 5px rgb(143, 141, 141);
     --branding-font: "Montserrat", sans-serif;
     --background: #fcf9f9; 
   }
@@ -44,16 +43,32 @@
 
   .backlink a:hover {
     text-decoration: overline;
+    color:rgb(248, 74, 5);
   }
 
-  .arrow_top {
+  .projectsnavigation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .arrow_top,
+  .arrow_right {
     display: block;
-    text-align: end;   
+    text-align: end; 
+    text-decoration: none;
+  }
+
+  .nextproject,
+  .previousproject {
     color: var(--title-color);
   }
 
-  .bi-arrow-up-square {
-    width: 1em;
+
+  .bi-arrow-up-square,
+  .bi-arrow-right-short,
+  .bi-arrow-left-short {  
+    color: var(--title-color);
+    font-size: 1em;
   }
 
 
@@ -64,11 +79,8 @@
 
   .read_more {
     color: var(--title-color);
-
-  }
-
-  .read_more a{
     text-decoration: underline;
+    cursor: pointer;
   }
 
 
@@ -141,7 +153,7 @@ text-decoration: overline;
 }
 
 .index a:hover {
-  text-decoration: underline;
+  text-decoration: overline;
   color: rgb(250, 72, 1);
 }
 
@@ -168,7 +180,9 @@ margin-top: 10%;
 #icons, 
 #cards, 
 #menus,
-#UIexplanation {
+#UIexplanation,
+#AIModules,
+#templates {
   display: flex;
   justify-content: space-between;
 }
