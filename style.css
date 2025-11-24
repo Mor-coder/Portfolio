@@ -182,7 +182,8 @@ margin-top: 10%;
 #menus,
 #UIexplanation,
 #AIModules,
-#templates {
+#templates,
+#modulestemplates {
   display: flex;
   justify-content: space-between;
 }
