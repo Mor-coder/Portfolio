@@ -131,7 +131,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
 <h4 class="index_number">01</h4>
 </div>
 <hr>
-<img src="/img/UIexplanation.svg" alt="image showing Mosaiq Project Page UI with each element explained" class="img-fluid UIexplanation mt-5">
+<lightbox-img src="/img/UIexplanation.svg" alt="image showing Mosaiq Project Page UI with each element explained" class="img-fluid UIexplanation mt-5" group="assistant"></lightbox-img>
 <p class="mt-5"><strong>MosaiQ Labs is a startup with the mission to integrate AI solutions to knowledge workers workflows.</strong> Data collection reported that users followed a specific research model that can be broken down into three section:<strong> data collection, data analysis, and production of deliverables. The Project Page is where all these three come together. </strong></p>
 <p>The Project Page is where all the saved files are collected, and where they can be accessed for analysis with the support of the AI. It is divided in two main sections: the files’ database on the left, and the AI assistant on the right.<strong> The Assistant has many functions and can interact with the database in various ways:</strong></p>
 <ul>
@@ -190,9 +190,10 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
         <p>As the Beta user base expanded, however, new needs emerged — particularly the ability to work with additional file types such as tables and charts. Our challenge was to integrate these formats while maintaining, and ideally enhancing, the efficiency of the search experience.</p>
     </div>
     <div class="col-sm-6">
-        <img src="/img/UIoldprojectpage.svg" alt="UI showing an older version of the project page designed in 2022" class="img-fluid">
+        <lightbox-img src="/img/UIoldprojectpage.svg" alt="UI showing an older version of the project page designed in 2022" class="img-fluid"></lightbox-img>
     </div>
 </div>
+
 <div class="row">
     <div class="col-sm-6">
         <p><strong>Problem:</strong></p>
@@ -218,7 +219,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
         </ul>
     </div>
     <div class="col-sm-6">
-        <img src="/img/UIupdatedprojectpage.svg" alt="UI showing the updated and current version of the project page" class="img-fluid mt-5">
+        <lightbox-img src="/img/UIupdatedprojectpage.svg" alt="UI showing the updated and current version of the project page" class="img-fluid mt-5"></lightbox-img>
     </div>
 </div>
 
@@ -252,7 +253,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
         </ul> 
     </div>
     <div class="col-sm-6 mt-5">
-        <img src="/img/UIprojectpagevisualfeedback.svg" alt="UI showing the visual feedback in the project page" class="img-fluid">
+        <lightbox-img src="/img/UIprojectpagevisualfeedback.svg" alt="UI showing the visual feedback in the project page" class="img-fluid"></lightbox-img>
     </div>
 </div>
 
@@ -286,7 +287,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
         </ul> 
     </div>
     <div class="col-sm-6 mt-5">
-        <img src="/img/UIprojectpagecitations.svg" alt="UI showing citations in the project page" class="img-fluid">
+        <lightbox-img src="/img/UIprojectpagecitations.svg" alt="UI showing citations in the project page" class="img-fluid"></lightbox-img>
     </div>
 </div>
 
@@ -303,7 +304,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
         <p>We add an <strong>“Add content” button</strong> at the top of the page. Once clicked, the button opens a menu with the options to upload various file types.</p>    
     </div>
     <div class="col-sm-6 mt-5">
-        <img src="/img/UIprojectpageaddcontentmenu.svg" alt="UI showing the add content menu in the project page" class="img-fluid">
+        <lightbox-img src="/img/UIprojectpageaddcontentmenu.svg" alt="UI showing the add content menu in the project page" class="img-fluid"></lightbox-img>
     </div>
 </div>
 
@@ -349,6 +350,19 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.c
       and hosted on Netlify
     </p>
   </div>
+
+  <div id="img-lightbox-overlay">
+    <span id="img-lightbox-close">&times;</span>
+    <img id="img-lightbox-content" />
+    <div id="img-lightbox-zoom-controls">
+      <button id="zoom-in">+</button>
+      <button id="zoom-out">−</button>
+      <button id="zoom-reset">Reset</button>
+    </div>
+  </div>  
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+<script src="script.js"></script>
 
  </div>
 </body>

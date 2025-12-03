@@ -222,6 +222,48 @@ margin-top: 10%;
     text-align: center;
   }
 
+  #img-lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(133, 132, 132, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  #img-lightbox-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.2s ease;
+    cursor: grab;
+  }
+  
+  #img-lightbox-close {
+    position: absolute;
+    top: 25px;
+    right: 35px;
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  #img-lightbox-zoom-controls {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  #img-lightbox-zoom-controls button {
+    background: white;
+    border: none;
+    padding: 8px 12px;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
 /* Container for floating leaves */
 .leaves-container {
   position: fixed;
