@@ -24,3 +24,19 @@ for (let i = 0; i < numberOfLeaves; i++) {
   container.appendChild(leaf);
 }
 */
+
+class LightboxImage extends HTMLElement {
+  connectedCallback() {
+    const src = this.getAttribute('src');
+    const alt = this.getAttribute('alt') || '';
+    const group = this.getAttribute('group') || 'gallery';
+
+    this.innerHTML = `
+      <a href="${src}" data-lightbox="${group}" data-title="${alt}">
+        <img src="${src}" alt="${alt}" class="img-fluid" style="cursor: zoom-in;">
+      </a>
+    `;
+  }
+}
+
+customElements.define('lightbox-img', LightboxImage);
