@@ -101,8 +101,8 @@
     </div>
 <div class="col-sm-8">
     <h5>Context</h5>
-    <p>The project focused on reimagining the hotel booking journey through a user-centered approach. While the process of planning a trip is familiar, it often becomes overwhelming due to the many expectations users place on each step. To understand where frustration builds and how the experience could be improved, I analyzed existing hospitality platforms, explored user behavior, and identified key moments that shape decision-making.
-      The project aimed to understand the emotional and practical challenges users face when selecting a hotel and to redesign the experience so it feels intuitive, trustworthy, and enjoyable from start to finish.</p>
+    <p>The project focused on reimagining the hotel booking journey through a user-centered approach. While the process of planning a trip is familiar, it often becomes overwhelming due to the many expectations users place on each step. To understand where frustration builds and how the experience could be improved, I analyzed existing hospitality platforms, explored user behavior, and identified key moments that shape decision-making.</p>
+     <p><strong>The project aimed to understand the emotional and practical challenges users face when selecting a hotel and to redesign the experience so it feels intuitive, trustworthy, and enjoyable from start to finish.</strong></p>
 </div>
 </div>
 
@@ -111,13 +111,13 @@
         <h5>Constraints</h5>
         <ul>
             <li>
-                <p>Dismantled previous ideas to make space for new, more suitable ones</p>
+                <p>Reevaluating initial concepts: Many early design ideas had to be dismantled or rethought to create space for more effective solutions grounded in user insights.</p>
             </li>
             <li>
-                <p>Technical constraints  </p>
+                <p>Technical limitations: Feasible design decisions had to align with existing platform capabilities and development constraints. </p>
             </li>
             <li>
-               <p>Ever-changing priorities within the workflow (research it’s an iterative process)</p> 
+               <p>Iterative and evolving priorities: As user research progressed, new findings continuously reshaped the direction of the project, requiring flexibility and ongoing refinement.</p> 
             </li>
         </ul>
     </div>
@@ -125,17 +125,22 @@
         <h5>Goals</h5>
         <ul>
             <li>
-                <p>To make the UX of the Project Page more intuitive (what users can do and how)</p>
+                <p>Create a more intuitive booking flow by clarifying available actions, simplifying navigation, and reducing moments of confusion throughout the journey.</p>
             </li>
             <li>
                 <p>
-                    To make the assistant’s interaction (whether with the database or with the user) feeling “natural” 
+                  Design interactions that feel “natural,” especially where users engage with dynamic elements such as calendars, room options, or contextual information.
                 </p>
             </li>
             <li>
                 <p>
-                    To boost the workflow 
-                </p>
+                  Support smoother decision-making by presenting essential details—photos, amenities, pricing, policies—clearly and at the right moments.              
+               </p>
+            </li>
+            <li>
+              <p>
+                Strengthen trust and comfort so users feel confident while moving through the process without unexpected friction or information overload.
+              </p>
             </li>
         </ul>
     </div>
@@ -144,13 +149,23 @@
         <ul>
             <li>
                 <p>
-                    Improved the overall workflow’s by implementing some common features like selecting and/or prioritising files
+                  Enhanced workflow clarity by introducing familiar interaction patterns, such as selectable cards, clearer categorization, and consistent placement of key information.
                 </p>
             </li>
             <li>
                 <p>
-                    Making both interactions: AI      User &       AI     Database more intuitive & user friendly
+                  More intuitive user interactions: The redesigned flow addressed pain points identified in usability testing, making essential information easier to find and understand.
                 </p>
+            </li>
+            <li>
+              <p>
+                Improved handling of dynamic elements: Interactions such as date selection, photo browsing, and room comparison became smoother and more user-friendly.
+              </p>
+            </li>
+            <li>
+              <p>
+                Reduced cognitive load by simplifying descriptions, restructuring the layout, and presenting add-ons at more appropriate moments—making the entire booking experience feel more transparent and trustworthy.
+              </p>
             </li>
         </ul>
     </div>
@@ -182,6 +197,9 @@
               <h4>The Research Phase</h4>
               <h4 class="index_number">00</h4>
           </div>
+
+          <hr>
+
         <div class="col-sm-6">
           <p class="mt-5">
             To familiarise myself with the context of booking and hospitality
@@ -227,62 +245,69 @@
             Once I had familiarised myself with the environments, I wanted to gain a deeper understanding of the experience from the users’ perspective—where they encountered pain points, what challenges they faced, and how we might address them. To explore this further, I conducted a series of <strong>usability tests.</strong>
           </p>
           <p class="mt-5">The usability tests revealed the following key findings:</p>
+          <h6>1. Flexibility & User Control</h6>
           <ul>
             <li>
               <p>
-                As users have different ways to achieve tasks (i.e. using the calendar VS
-                inserting dates) it would be good for the software to provide multiple options to
-                satisfy everyone.
+                Users rely on different methods to complete tasks (e.g., typing dates vs. using a calendar), highlighting the need for multiple pathways to achieve the same action.
           </p>
             </li>
             <li>
               <p>
-               Reviews, photos, and maps are essentials.
+                The system should retain the user’s previous selections during navigation to prevent unnecessary repetition.         
+               </p>
+            </li>
+          </ul>
+
+          <h6>2. Information Clarity & Hierarchy</h6>
+          <ul>
+            <li>
+              <p>
+                Users expect essential information—such as price, free cancellation, breakfast availability—to be clearly visible early in the flow.
           </p>
             </li>
             <li>
               <p>
-                Photos help create a hotel’s first impression and to a certain extent, it helps the person understand the size of a room.
+                Long room descriptions discourage reading, risking missed details. Instead, users prefer concise, scannable descriptions.
           </p>
             </li>
             <li>
               <p>
-                It’s best to avoid long room descriptions as people might not be bothered to read it through and miss important information, which ultimately might end up in them feeling cheated on.
+                Visual aids (e.g., icons) help simplify amenity and room information.         
+              </p>
+            </li>
+          </ul>
+
+          <h6>3. Visual Content & Decision Support</h6>
+          <ul>
+            <li>
+              <p>
+                Photos, maps, and reviews are key decision-making tools and strongly influence trust.
+              </p>
+            </li>
+            <li>
+              <p>
+                Photos also help users understand the scale and layout of a room.
+          </p>
+            </li>
+          </ul>
+
+          <h6>4. Add-ons & Transparency</h6>
+          <ul>
+            <li>
+              <p>
+                Add-ons should appear after the room selection, as showing them earlier feels pushy or misleading.
           </p>
             </li>
             <li>
               <p>
-                Rather, be brief and use a clear format, perhaps icons, to describe the hotel and room’s amnesties.
-          </p>
+                Users respond better to thoughtful, relevant add-ons rather than generic options.        
+            </p>
             </li>
             <li>
               <p>
-                Important information, such as price, free cancellation and breakfast should be listed earlier on and should be visible.
-            </li>
-            <li>
-              <p>
-                Clear room descriptions.
-          </p>
-            </li>
-            <li>
-              <p>
-                Present add-on once the room has been selected otherwise it might feel pushy and shady.
-          </p>
-            </li>
-            <li>
-              <p>
-                Be clever about the add-on, don’t just present the standard ones.
-          </p>
-            </li>
-            <li>
-              <p>
-                Present a clear summary of the booking repeating all the important info.
-          </p>
-            </li>
-            <li>
-              <p>
-                Try to remember the basic pieces of information selected by the guests when they’re navigating the website back and forth looking for the perfect room.
-          </p>
+                A clear summary page is essential for reassurance, helping users verify all important details before confirming.
+              </p>
             </li>
           </ul>
           
@@ -303,44 +328,102 @@
             <h4>Affinity Diagram</h4>
             <h4 class="index_number">01</h4>
         </div>
-          <div class="col-sm-6">
-           
-          </div>
 
-          <div class="col-sm-6">
-            <p>text</p>
-          </div>
+        <hr> 
+
+
+          <div class="col-sm-6 mt-5">
+           <p>To make sense of the usability testing and research findings, I organized the observations into an affinity diagram. This method helped me identify patterns, highlight pain points, and uncover opportunities to improve the hotel booking experience.</p>
+
+          <h5 class="mt-5">Key Insight Clusters:</h5>
+          <h6 class="mt-3">1. User Flexibility & Control</h6>
+          <ul>
+            <li>
+              <p>
+                Users approach tasks differently (e.g., typing dates vs. using a calendar).
+              </p>
+            </li>
+            <li>
+              <p>
+                Systems that remember user choices prevent frustration when navigating back and forth.
+              </p>
+            </li>
+          </ul>
+
+          <h6>2. Clarity & Information Hierarchy</h6>
+          <ul>
+            <li>
+              <p>
+                Essential information (price, free cancellation, breakfast) must be visible early.
+              </p>
+            </li>
+            <li>
+              <p>
+                Room descriptions should be concise and scannable.
+              </p>
+            </li>
+            <li>
+              <p>
+                Icons or visual cues improve comprehension of amenities and room features.
+              </p>
+            </li>
+          </ul>
+
+          <h6>3. Visual Content & First Impression</h6>
+          <ul>
+            <li>
+              <p>
+                Photos, reviews, and maps strongly influence trust and decision-making.
+              </p>
+            </li>
+            <li>
+              <p>
+                Visuals help users gauge room size and quality before booking.
+              </p>
+            </li>
+          </ul>
+
+          <h6>4. Adds-on & Transparency</h6>
+          <ul>
+            <li>
+              <p>
+                Add-ons should appear after the room is selected to avoid feeling pushy.
+              </p>
+            </li>
+            <li>
+              <p>
+                Presenting relevant, personalized add-ons enhances user satisfaction.
+              </p>
+            </li>
+            <li>
+              <p>
+                A clear booking summary reassures users and confirms choices.
+              </p>
+            </li>
+          </ul>
         </div>
 
-        <div class="row mt-5">
-          <div class="col-sm-3">
-          <lightbox-img src="/img/affinityD1.png" alt="affinity diagram step 1" class="img-fluid"></lightbox-img>
-        </div>
-        <div class="col-sm-3">
+        <div class="col-sm-6 mt-5">   
+          <div>       
           <lightbox-img src="/img/affinityD2.png" alt="affinity diagram step 2" class="img-fluid"></lightbox-img>
-        </div>
-        <div class="col-sm-3">
+          </div>
+        <div class="mt-3">
           <lightbox-img src="/img/affinityD3.png" alt="affinity diagram step 3" class="img-fluid"></lightbox-img>
         </div>
-        <div class="col-sm-3">
-          <lightbox-img src="/img/affinityD4.png" alt="affinity diagram step 4" class="img-fluid"></lightbox-img>
-        </div>
-        <div class="col-sm-3">
-          <lightbox-img src="/img/affinityD5.png" alt="affinity diagram step 5" class="img-fluid"></lightbox-img>
-        </div>
-        <div class="col-sm-3">
-          <lightbox-img src="/img/affinityD6.png" alt="affinity diagram step 6" class="img-fluid"></lightbox-img>
-        </div>
-        <div class="col-sm-3">
-          <lightbox-img src="/img/affinityD7.png" alt="affinity diagram step 7" class="img-fluid"></lightbox-img>
+        <div class="mt-3">
+          <lightbox-img src="/img/affinityD7.png" alt="affinity diagram step 7" class="img-fluid mt-3"></lightbox-img>
         </div>
         </div>
+      </div>
 
         <div class="row mt-5">
           <div id="user_journey">
             <h4>User Journey</h4>
             <h4 class="index_number">02</h4>
-        </div>
+  </div>
+            <hr> 
+
+      
           <div class="col-sm-6 mt-3">
             <p>Designing the user journey has been quite insightful in getting a full picture of the experience users go through while booking a hotel room.</p>
             <strong><p>What I found fascinating, was that eventhough the pick pain point happened ad the "Adds-on" stage, the frustration was already building from before.</p></strong>
@@ -359,6 +442,10 @@
             <h4>Sketches</h4>
             <h4 class="index_number">03</h4>
         </div>
+
+        <hr> 
+
+        
           <div class="col-sm-4">
            <lightbox-img src="/img/sketch3.jpg" alt="sketch for the hotel homepage" class="sketch img-fluid"></lightbox-img>
           </div>
@@ -395,11 +482,13 @@
             </div> 
         </div>
 
-        <div id="prototype">
+   
+
+        <div id="prototype" class="mt-5">
           <h4>Prototype</h4>
           <h4 class="index_number">04</h4>
       </div>
-
+     <hr>
 
 
 
