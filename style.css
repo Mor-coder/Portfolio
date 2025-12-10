@@ -190,7 +190,12 @@ margin-top: 10%;
 #UIexplanation,
 #AIModules,
 #templates,
-#modulestemplates {
+#modulestemplates,
+#research,
+#affinity_diagram,
+#user_journey,
+#sketches,
+#prototype {
   display: flex;
   justify-content: space-between;
 }
