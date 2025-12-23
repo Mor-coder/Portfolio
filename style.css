@@ -137,8 +137,6 @@
     min-height: 1.25rem; /* or match overline height */
     margin-bottom: 0.5rem;
   }
-  
-  
 
   .mosaiq_cards_container {
     margin-top: 10%;
@@ -159,9 +157,44 @@
     justify-content: space-between;
   }
 
+  .case_study_brief h3{
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+  .project_title {
+    font-size: 200px;
+  }
+
+  .project_subtitle {
+    font-size: 100px;
+    color: var(--subtitle);
+  }
+
   .subtitle {
     color: var(--subtitle);
   }
+
+  .mosaiq_img_container {
+    display: flex; 
+    justify-content: center; /* horizontal centering */
+    align-items: center;     /* vertical centering */
+    height: 100vh;
+    width: 100%;             /* ensure full width */
+    margin: 0;               /* remove any default margin */
+    padding: 0;              /* remove any default padding */
+    box-sizing: border-box;
+}
+
+.mosaiq_img img {
+    max-width: 80%;
+    height: auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;          /* ensures block-level centering */
+}
+
+
 
   .arrow_top,
   .arrow_right {
