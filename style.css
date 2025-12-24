@@ -157,7 +157,7 @@
     justify-content: space-between;
   }
 
-  .case_study_brief h3{
+  .case_study_brief h3 {
     font-family: 'Times New Roman', Times, serif;
   }
 
@@ -172,6 +172,10 @@
 
   .subtitle {
     color: var(--subtitle);
+  }
+
+  .mosaiq_subtitle {
+    font-family: 'Times New Roman', Times, serif;
   }
 
   .mosaiq_img_container {
@@ -193,8 +197,6 @@
     display: block;
     margin: 0 auto;          /* ensures block-level centering */
 }
-
-
 
   .arrow_top,
   .arrow_right {
