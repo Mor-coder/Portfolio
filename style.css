@@ -189,6 +189,19 @@
     box-sizing: border-box;
 }
 
+.mosaiq_img_container_UIs {
+  display: flex; 
+  justify-content: center; /* horizontal centering */
+  align-items: center;     /* vertical centering */
+  height: 100vh;
+  width: 100%;             /* ensure full width */
+  margin: 0;               /* remove any default margin */
+  padding: 0;              /* remove any default padding */
+  box-sizing: border-box;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
 .mosaiq_img img {
     max-width: 80%;
     height: auto;

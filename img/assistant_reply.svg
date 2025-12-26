@@ -1,9 +1,5 @@
 <svg width="550" height="347" viewBox="0 0 550 347" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="550" height="347" rx="12" fill="url(#pattern0_432_8160)"/>
-<rect x="519.5" y="113.5" width="17" height="18" rx="3.5" stroke="#FF6A07"/>
-<path d="M524.372 125.236V123.928L528.332 118.6H530.372L526.496 123.928L525.548 123.652H532.16V125.236H524.372ZM528.896 127V125.236L528.956 123.652V122.08H530.792V127H528.896Z" fill="#FF6A07"/>
-<rect x="514.5" y="296.5" width="17" height="18" rx="3.5" stroke="#FF6A07"/>
-<path d="M519.372 308.236V306.928L523.332 301.6H525.372L521.496 306.928L520.548 306.652H527.16V308.236H519.372ZM523.896 310V308.236L523.956 306.652V305.08H525.792V310H523.896Z" fill="#FF6A07"/>
 <rect x="321.5" y="169.5" width="33" height="214" rx="3.5" transform="rotate(-90 321.5 169.5)" stroke="#FF6A07"/>
 <rect x="315.5" y="325.5" width="29" height="195" rx="3.5" transform="rotate(-90 315.5 325.5)" stroke="#FF6A07"/>
 <defs>
