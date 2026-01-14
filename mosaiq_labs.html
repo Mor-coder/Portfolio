@@ -126,46 +126,131 @@
           From data collected through questionnaires and direct observations, we were able to notice a pattern of repetitive, mechanical tasks that people undertaken when working on a deliverable:<strong> collecting documents, organising information, and synthesising large volumes of data.</strong> Although necessary, this work was time-consuming and distracting, pulling the focus away from the strategic decision-making where peoples' expertise mattered most.
         </p>
         <p class="overline mt-5">CASE STUDY</p>
-        <p>On these premises, we needed to create an environment in which users could collect all the documents in one place, in one click (if possible). We formulated two options based on the type of research users undertake: <br/><br/>
-           <ul>
+        <p>On these premises, we needed to solve the following issues: </p>
+          <ul class="mt-5">
             <li>
-              <p>users could upload the required documents either directly from the platform through the "Add Content" menu. Ideal if users have files already saved in their database.</p>
+              <h3>Create an environment in which users can collect all the documents in one place, in one click (if possible).</h3>
             </li>
+
             <li>
-              <p>
-              or via the MosaIQ extension. This allows users to add all the webapges, or only the one they are visiting, directly to the project page.
-              </p>
+              <h3>
+                Create an environment in which it is easy to select one or multiple files.
+              </h3>
             </li>
-           </ul>
+
+            <li>
+              <h3>
+                Have the possibility to add more content to the project at any time.
+              </h3>
+            </li>
           </div>
         </div>
 
 
-        <div class="row mt-5">
-            <div class="col-sm-12">
-                <img src="img/UIprojectpageaddcontentmenu.svg" class="img-fluid" alt="Mosaiq UI showing add content menu">
-                <p class="font-italic"><smaller>Project Page UI showing the "Add Content" menu active</smaller></p>
+      
+          <div class="mosaiq_img">  
+            <div class="row mt-5"> 
+              <div class="col-sm-12 mt-5">   
+                <img src="img/project_page.png" class="img-fluid" alt="Mosaiq UI showing the project page with a list of files">
+           <p class="mt-5">Project Page UI showing a rich and various files database related to the subject of Self Driving Cars. For practicality, in this instance, all the articles have the same titles. In a real workflow, the article's title would remain the same as the original one. </p>
+           <p>In this environment, multiple files type can be collected and ordered via the tabs at the top of the database, or filtered through the filters at the top of the page.</p>
+          <p>"Oooops!" it can happen that an article, especially webpages, are protected and can't be downloaded. We've integrated a descreet but effective visual cue to let users know the status of the file.</p>
+          </div>
+            <div class="col-sm-12 mt-5">
+                <img src="img/Projectpageui.svg" class="img-fluid" alt="Mosaiq UI showing add content menu">
+                <p class="mt-5">To strenghten the visual feedback when files are selected, we adopted the same approach as Gmail: once the file is selected, the background colour changes, and the box next to the file's title get "ticked".</p>
+            </div>
+            <div class="col-sm-12 mt-5">
+              <img src="/img/UIprojectpageaddcontentmenu.svg" class="img-fluid" alt="Mosaiq UI showing add content menu">
+              <p class=mt-5>Users can always add more content to their project through the "Add content" CTA at the top of the page.</p>
             </div>
             <div class="col-sm-12 mt-5">
               <img src="/img/extension_screen.svg" class="img-fluid" alt="Mosaiq extension">
-              <p>Screenshot of a webpage with the MosaIQ extension open. For this instance, few pages have been selected.</p>
+              <p class="mt-5">Or they can add pages via the MosaIQ extension. User can either select the current page, selected tabs, or all the opened tabs.</p>
             </div>
-            <div class="col-sm-12 mt-5">   
-                <img src="img/project_page.png" class="img-fluid" alt="Mosaiq UI showing the project page with a list of files">
-           <p>UI of MosaIQ project page showing the file database rich with various types of files related to the subject of Self Driving Cars. For practicality, in this instance, all the articles have the same titles. In a real workflow, the article's title would remain the same as the original one. </p>
-              </div>
       </div>
+    </div>
             
             
-           <div class="row">
+           <div class="row mt-5">
             <div class="col-sm-6"></div>
-            <div class="col-sm-6">
-         
-            <h2 class="mosaiq_subtitle mt-5">The Opportunity</h2>
-        <p>
-          This gave us the opportunity to understand our target users' flow and design a web application with integrated AI, designed for knowledge workers who need to produce in-depth deliverables from complex and data-heavy workflows.</p>
-          </div>  
+            <div class="col-sm-6 mt-5">
+              <p>Once we tackled the issue of collecting documents, we focused on the need to synthesise large volumes of data, hence the interactions with the AI Assistant. And a whole new set of questions came up:</p>
+              <h3>How does the user know which files is the assistant analysing?</h3>
+              <h3>How can users check the context from which the answer has been extracted from?</h3>
+              <h3>Can users highlight a segment of the answer and ask further questions about the spefici text?</h3>
+            </div>
+           </div>
+
+           <!---
+              <div class="mosaiq_img">  
+                <div class="row mt-5"> 
+                  <div class="col-sm-12 mt-5">  
+                    <img src="/img/UIprojectpagevisualfeedback.svg">
+                    <img src="/img/assistant_reply.svg"> 
+                    <img src="img/UIactions.svg" class="img-fluid" alt="Mosaiq UI project page outlining the automatic ai actions in the file bar to showing where thet were at this phase of the product">
+                    <p class="mt-5">In the first iteration, we added all the available actions: </p>
+                      <ul>
+                        <li>
+                          <p>
+                          Light bulb for automated AI answers (like summaries and key points)
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                          Leaving a comment  
+                          </p>
+                        </li>
+                        <li>
+                          <p>
+                           Open the article in source  
+                          </p>                        
+                        </li>
+                        <li>
+                          <p>
+                          Copy, Rename, Delete article  
+                          </p>
+                        </li>
+                      </ul>  
+                    </div>
+               
+                  <img src="img/icons_iteration2.svg" class="img-fluid mt-5">
+                  <p class="mt-5">After observing our Beta group interacting with the UI, we noticed that some actions weren't of interest, hence we decided to scrape them for now, with the intention to bring them back later on, if the need for them become stronger.</p>
+                  <ul>
+                    <li>
+                      <p>Automated AI answers (we adopted a home made icon of the little stars, which, at the time, was becoming a popular icon to represent anything AI)</p>
+                    </li>
+                    <li>
+                      <p>The article's title became also the link to open the file in source, as per convention.</p>
+                    </li>
+                  </ul>
+                  <img src="img/icons_iteration3.svg">
+                  <p class="mt-5">In this last iteration, we reduced the noise even more</p>
+                  
+                  
+                
+          </div>
         </div>
+
+        --->
+
+
+
+
+
+<div class="row">
+  <div class="col-sm-6"></div>
+  <div class="col-sm-6">
+        <h2 class="mosaiq_subtitle mt-5">The Opportunity</h2>
+        <p>
+          This gave us the opportunity to understand our target users' flow and design a web application with integrated AI, designed for knowledge workers who need to produce in-depth deliverables from complex and data-heavy workflows
+        </p>
+  </div>
+</div>
+         
+    
+ 
+   
 
         <div class="row">
           <div class="col-sm-12 mt-5">
