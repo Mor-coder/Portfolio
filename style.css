@@ -60,14 +60,14 @@
     padding: 8px 16px;
     border: 1px solid #320A28;
     border-radius: 8px;
-    background-color: #320A28;
-    color: var(--background);
+    background-color: transparent;
+    color: #320A28;
   }
 
   .btn_read_more:hover {
     transition: ease-in-out 0.3s;
-    background-color: var(--background);
-    color: #320A28;
+    background-color: #320A28;
+    color: #ffff;
     border: 1px solid #320A28;
   }
 
