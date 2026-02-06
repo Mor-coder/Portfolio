@@ -219,10 +219,11 @@
             <p class="overline mt-5">CASE STUDY</p>
           </div>
           <div class="col-sm-6 mt-5">  
-            <p>
+            <h3>Collecting large volume of data in one place</h3>
+            <p class="mt-5">
               When I started, the platform looked fairly different to its current design. Its capabilities to upload and store files were limited, hence not all kid of files could be uploaded nor analysed by the AI. This one also was slower at analysing files, and its scope restricted to the uploaded files as opposed to the web.
             </p>
-            <h4 class="mt-5">Translating insights into "How might we..."</h4>       
+            <h5 class="mt-5">Translating insights into "How might we..."</h5>       
           <ul class="mt-5">
             <li>
               <p class="subtitle">
@@ -266,26 +267,26 @@
       </div>
       <div class="col-sm-6 mt-5">
         <p>
-          Half-inspired by the design of "Finder" and that of Gmail, and due to the increase capabilities of the platform to support file types, we gave the page a good re-vamp. 
+          Half-inspired by the "Finder" design and Gmail's design, and due to the increase capabilities of the platform to support file types, we gave the page a good re-vamp. 
         </p>
         <ul>
           <li>
-            <p>
+            <p class="subtitle">
               Added the check-box to facilitate the selection of one or multiple files 
           </li> 
           <li>
-            <p>
+            <p class="subtitle">
               Included tabs at the top of the database, to order files according to the preferred criteria for faster browsing
             </p>
           </li>
           <li>
-            <p>
+            <p class="subtitle">
               Designed filters and position them above the tabs to allow for fast skim through the files
             </p>
           </li>
        
           <li>
-            <p>
+            <p class="subtitle">
               Included visual feedback for failed uploads. In fact, despite the great improvement of the machine, some files, especially web pages which content was restrcited by copyright, were still a difficult pill to digest and upload
             </p>
           </li>
@@ -312,37 +313,37 @@
     <div class="col-sm-6 mt-5">
       <ul>
         <li>
-            <p>
+            <p class="subtitle">
             To "Add Content" to the project, or to "Share" the project's content, we added two dinstinc CTA at the very top of the page, next to the search bar. 
          </p> 
         </li>
         <li>
-          <p>
-            However, through the download of the MosaiQ Lab extension, users were also able to add multiple pages to their project externally from the platform, which was kind of handy during the collecting material phase of the research process.
+          <p class="subtitle">
+          Through the download of the MosaiQ Lab extension, users were also able to add multiple pages to their project with one click, which was pretty handy during the first stages of the research process.
           </p>
         </li>
         </ul>
     </div>
   </div>
 
-       
 
-
-    <div class="review_section">
+ <div class="review_section">    
+ <div class="row">
+  <div class="col-sm-6">
       <div>
-        <img src="/img/review.svg" alt="quotes for review" class="review">
+        <img src="/img/review_light.svg" alt="quotes for review" class="review">
       </div>
-    <div class="row">
-      <div class="col-sm-12">
+  </div>
+      <div class="col-sm-6">  
+        <div class="review_text">
         <h3>“I just know where to put all my data and analyze it, which makes my process much smoother"</h3>
         <p>
           "Whether I'm preparing a financial report or gathering passive insights for future reference, MosaiQ ensures everything is in one place. The ease with which I can transition from passive data accumulation to active analysis has transformed our workflows."
         </p>
         <p class="text-end"><strong><i>Samantha, Financial Associate - Finance</i></strong></p>
-      </div>
 
-      <div class="col-sm-12 mt-5">
-        <h3>“I’ve accumulated data and been able to produce investment memos 5x faster"</h3>
+
+        <h3 class="mt-5">“I’ve accumulated data and been able to produce investment memos 5x faster"</h3>
         <p>
           "From accumulating insights on emerging sectors to diving deep into potential investments, MosaiQ is my go-to. It organizes both my data and my thoughts, helping me pivot from passive understanding to active decision-making effortlessly."
         </p>
@@ -350,22 +351,15 @@
       </div>
     </div>
   </div>
-            
-
-  <div class="mosaiq_img">  
-    <div class="row mt-5"> 
-      <div class="col-sm-12 mt-5">  
-        <img src="/img/UIprojectpagevisualfeedback.svg" class="img-fluid">
-      </div>
-    </div>
-  </div>
+ </div>
             
            <div class="row mt-5">
             <div class="col-sm-6 mt-5">
               <div class=overline>case study</div>
             </div>
             <div class="col-sm-6 mt-5">
-              <p>From here, we focused on the user interaction with the assitant, to tackle the issue of synthesise big volume of data in no time</p>
+              <h3>Synthesise data - AI interaction</h3>
+              <p class="mt-5">Synthesising data is the primarily function of the AI Assistant as well as the most critical part of users' workflow. Users heavily rely on the AI to process data, and to provide quick and reliable answers. In this context, design challenges spammed from technical interactions to psychological ones, and the introduction of the machine's thinking process.</p>
               <li>
                 <p class="subtitle">
                   How might we offer clear heauristics and visually providing cues to users of what is the assistant doing, including with which article/s is it interacting with?
@@ -381,17 +375,17 @@
                 How might we incorporate ways for users to view the source from which the answer has been extracted from?
               </p>
               </li>
-              
-              <p class="mt-5"> 
-              However, we soon realise that all the prompt that users were giving to the AI, could easily be translated into AI Modules, aka lines of code that tells the AI what to do, and how to delivery it.
-            </p>
-            <li>
-              <p class="subtitle">
-              How might we integrate AI Modules in the flow?
-            </p>
-            </li>
             </div>
            </div>
+
+
+  <div class="mosaiq_img">  
+    <div class="row mt-5"> 
+      <div class="col-sm-12 mt-5">  
+        <img src="/img/UIprojectpagevisualfeedback.svg" class="img-fluid">
+      </div>
+    </div>
+  </div>
 
 
               <div class="row mt-5">
@@ -400,7 +394,7 @@
                   <p>
                     When the assistant interact with any specific file from the database, the selected files' background changes colour to strengthen the visual cue between selected and unselected articles. 
                     <br/><br/>
-                    On top of it, we added a <strong>“Reply to”</strong> cue confirming the files analysed by the AI. We've added this cue as selected files might not always be visible to the user, especiallu if they end up at the bottom of the list. 
+                    On top of it, we added a <strong>“Reply to | 4 files”</strong> cue confirming the files analysed by the AI. We've added this cue to reinforce the visual feedback as selected files might not always be visible to the user. 
                   </p>
                   </div>
               </div>
@@ -418,10 +412,10 @@
                 <div class="col-sm-6 mt-5"></div>
                 <div class="col-sm-6 mt-5">
                   <p>
-                    Influenced by the ChatGPT design, we’ve iterated on various of the "reasoning behind the process" versions, and we agreed that the thinking process should be triggered, as opposed to be displayed by default, as it created visual noise and broke the communication flow. 
+                    Influenced by the ChatGPT design, we’ve iterated on various version of the "reasoning behind the process". Eventually, we agreed that the thinking process should be triggered by the <strong>Logic</strong> CTA, as if enabled by default, it would create visual noise and break the communication flow. 
                     </p>
                     <p>
-                      While we iterated on the location of the "thinking process", we ultimately concluded that, as part of the conversation, it would make sense to stay inside the main chat placeholder.
+                      While we iterated on the location of the "thinking process", we ultimately concluded that, as part of the conversation, it would make sense to have it inside the main chat placeholder.
                   </p>
                 </div>
               </div>
@@ -437,27 +431,8 @@
                   <div class="col-sm-6 mt-5"></div>
                   <div class="col-sm-6 mt-5">
                     <p>
-                      At this stage, the AI is capable to digest and synthesise a great deal of information, but still, it requires time to write down, every time, the steps to achieve the task at hand. This is where AI Modules brought the real revolution! With one click, users were able to skip all the steps, and achieve the wanted result! <strong>I was so impressed with our Dev team!</strong>
-                    </p>
-                  </div>
-                </div>
-
-                <div class="mosaiq_img">
-                  <div class="row mt-5">
-                  <div class="col-sm-12 mt-5">
-                    <img src="/img/InvokeAIModules.svg" class="img-fluid" alt="invoking AI module from the assistant"> 
-                  </div>
-                </div>
-                </div>
-
-                <div class="row mt-5">
-                  <div class="col-sm-6 mt-5"></div>
-                  <div class="col-sm-6 mt-5">
-                    <p>
                       Just like in a face-to-face chat with a person, it is normal for the conversation to go back and forth, and take different tangents. New information, or different perceptions around an issue, enrich, confirm, or disprove our knowledge, requireing a reshape of the idea forming in our head. <br/><br/>
-                      And so it happens when researching. The more information we acquire, the more the back and forth before a cohesive thought is conceived. In this regard, the more sophsticated the assistant became in answering queries, the higher the need to create a conversation flow that resemble the natural one. To achieve this result, we enabled the <strong>"Reply"</strong> function, which allowed users to ask questions about a specific segment of the answer. <br/><br/>
-                      As mentioned before, once the conversation starts, it can take different directions, and sometimes it can be tricky tracing back the source of a data, or understanding the context in which that information has been provided. <br/><br/>
-                      Quickly, it became very important to be able to trace the source from which the data have been extrapolated from, and being able to view the content in its original source.
+                      And so it happens when researching. The more information we acquire, the more the back and forth before a cohesive thought is conceived. In this regard, the more sophsticated the assistant became in answering queries, the higher the need to create a conversation flow that resemble the natural one. To achieve this result, we enabled the <strong>"Reply"</strong> function, which allowed users to ask questions about a specific segment of the answer.
                     </p>
                   </div>
                 </div>
@@ -481,35 +456,91 @@
               </div>
 
 
-    <div class="review">
-      <div class="row">
-        <div class="col-sm-12">
-          <h3>“The perfect companion throughout my research & report building process”</h3>
-          <p>
-            "Working in market research means juggling vast amounts of data. MosaiQ has been pivotal in helping me centralize this data. Whether I'm passively building an industry understanding or actively preparing a report, the platform ensures I'm always steps ahead."
-          </p>
-          <p class="text-end"><strong><i>Carlos, Research Coordinator - Market Research</i></strong></p>
-        </div>
-      </div>
-    </div>
+              <div class="row mt-5">
+                <div class="col-sm-6 mt-5"></div>
+                <div class="col-sm-6 mt-5">
+                  <p>
+                  The more sophsticated the AI became, the stronger the need to <strong>trace back the source of an information, or understanding the context in which that information has been provided.</strong><br/><br/>
+                  </p>
+                  <ul>
+                    <li>
+                      <p class="subtitle">
+                        Bigger citation bubbles to show more text, hence provide a more comprehensive context in quick view mode
+                      </p>
+                    </li>
+                    <li>
+                      <p class="subtitle">
+                        Enable citation bubbles to show graphs, tables, and other non-text based data
+                      </p>
+                    </li>
+                    <li>
+                      <p class="subtitle">
+                        Add a <strong>View in source</strong> link to allow users to view the segment in its original source for a better understanding of the context from which the information has been extrapolated from
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="mosaiq_img">
+                <div class="row mt-5">
+                <div class="col-sm-12 mt-5">
+                  <img src="/img/InvokeAIModules.svg" class="img-fluid" alt="invoking AI module from the assistant"> 
+                </div>
+              </div>
+              </div>
+
+
+              <div class="row mt-5">
+                <div class="col-sm-6 mt-5"></div>
+                <div class="col-sm-6 mt-5">
+                <h3>Synthesising a series of prompts into one task - Introducing AI Modules for faster data processing and more accurate results</h3>              
+            <p class="mt-5"> 
+              However, we soon realise that all the prompt that users were giving to the AI, could easily be translated into AI Modules, aka lines of code that tells the AI what to do, and how to delivery it.
+            </p>
+            <li>
+              <p class="subtitle">
+              How might we integrate AI Modules in the flow?
+            </p>
+            </li>
+                  <p>
+                    At this stage, the AI is capable to digest and synthesise a great deal of information, but still, it requires time to write down, every time, the steps to achieve the task at hand. This is where AI Modules brought the real revolution! With one click, users were able to skip all the steps, and achieve the wanted result! <strong>I was so impressed with our Dev team!</strong>
+                  </p>
+                </div>
+              </div>
+
+
+              <div class="review_section">    
+                <div class="row">
+                 <div class="col-sm-6">
+                     <div>
+                       <img src="/img/review_light.svg" alt="quotes for review" class="review">
+                     </div>
+                 </div>
+                     <div class="col-sm-6">  
+                       <div class="review_text">
+                       <h3>“The perfect companion throughout my research & report building process”</h3>
+                       <p>
+                        "Working in market research means juggling vast amounts of data. MosaiQ has been pivotal in helping me centralize this data. Whether I'm passively building an industry understanding or actively preparing a report, the platform ensures I'm always steps ahead."
+                      </p>
+                       <p class="text-end"><strong><i>Carlos, Research Coordinator - Market Research</i></strong></p>
+                     </div>
+                   </div>
+                 </div>
+                </div>    
 
     <div class="row mt-5">
       <div class="col-sm-6 mt-5">
         <div class=overline>case study</div>
       </div>
       <div class="col-sm-6 mt-5">
-        <p>
-          Last but not least,<strong> we tackled the organising information issue </strong> 
-        </p>
+        <h3>
+          Organising information - building a report 
+        </h3>
         <li>
           <p class="subtitle">
-            How might we offer a space in which users can structure their deliverable?
+            How might we offer a space in which users can structure their deliverable while gathering information?
           </p>
-        </li>
-        <li>
-           <p class="subtitle mt-5">
-          How might we offer the possibility then, to save relevant information straight on the deliverable?
-        </p>
         </li>
       </div>
      </div>
@@ -517,138 +548,29 @@
      <div class="mosaiq_img">  
       <div class="row mt-5"> 
         <div class="col-sm-12 mt-5">
-          <img src="img/template1.png" class="img-fluid mt-5" alt="Mosaiq UI showing an iteration for the feature Template">
-        </div>
-      </div>
-    </div>
-                  
-
-                    <!---
-                    <p class="mt-5">In the first iteration, we added all the available actions: </p>
-                      <ul>
-                        <li>
-                          <p>
-                          Light bulb for automated AI answers (like summaries and key points)
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                          Leaving a comment  
-                          </p>
-                        </li>
-                        <li>
-                          <p>
-                           Open the article in source  
-                          </p>                        
-                        </li>
-                        <li>
-                          <p>
-                          Copy, Rename, Delete article  
-                          </p>
-                        </li>
-                      </ul>  
-                    </div>
-               
-                  <img src="img/icons_iteration2.svg" class="img-fluid mt-5">
-                  <p class="mt-5">After observing our Beta group interacting with the UI, we noticed that some actions weren't of interest, hence we decided to scrape them for now, with the intention to bring them back later on, if the need for them become stronger.</p>
-                  <ul>
-                    <li>
-                      <p>Automated AI answers (we adopted a home made icon of the little stars, which, at the time, was becoming a popular icon to represent anything AI)</p>
-                    </li>
-                    <li>
-                      <p>The article's title became also the link to open the file in source, as per convention.</p>
-                    </li>
-                  </ul>
-                  <img src="img/icons_iteration3.svg">
-                  <p class="mt-5">In this last iteration, we reduced the noise even more</p>
-                  
-                  
-                
-          </div>
+          <img src="img/Template1.jpg" class="img-fluid mt-5" alt="Mosaiq UI showing an iteration for the feature Template">
         </div>
 
-        --->
+        <div class="col-sm-12 mt-5">
+          <img src="img/Template2.jpg" class="img-fluid mt-5" alt="Mosaiq UI showing an iteration for the feature Template">
+        </div>
+
+        <div class="col-sm-12 mt-5">
+          <img src="img/Template3.jpg" class="img-fluid mt-5" alt="Mosaiq UI showing an iteration for the feature Template">
+        </div>
+
+        <div class="col-sm-12 mt-5">
+          <img src="img/Template4.jpg" class="img-fluid mt-5" alt="Mosaiq UI showing an iteration for the feature Template">
+        </div>
+
+        <div class="col-sm-12 mt-5">
+          <img src="img/Viewfile3.jpg" class="img-fluid mt-5" alt="Mosaiq UI showing an iteration for the feature Template">
+        </div>
 
       </div>
     </div>
-
-    <!--Image Mosaiq Lab Project Page-->
-
-
-
-
-
-
-
-  
-
-
-  <!--- 
- 
-<div class="mosaiq_cards_container">
-        <div class="mosaiq_project_card">
-              <h1>Designing the Assistant</h1> 
-              <h3 class="subtitle">AI communication & trust</h3>
-              <p class="subtitle">Role: Junior UX/UI Designer</p>
-              <a href="/developing_assistant.html">
-              <img src="/img/developing_the_assistant.svg" alt="Mosaiq Lab project page UI" class="img-fluid">
-            </a>
-              <div class="read_more mt-3">
-                <a href="/developing_assistant.html"><button class="btn_read_more">Read more</button></a> 
-              </div>
-            </div>
-       
-  
-                        <div class="mosaiq_project_card mt-5">
-                        <h1>Project Page & AI Interaction</h1>
-                        <h3 class="subtitle">AI collaboration in context</h3>
-                        <p class="subtitle">Role: Junior UX/UI Designer</p>
-                        <a href="/projectpage_assistinterct">
-                            <img src="/img/UIProjectpage.svg" alt="UI project page with assistant open" class="img-fluid">
-                        </a>
-                        <div class="read_more mt-5">
-                      <a href="/projectpage_assistinterct.html"><button class="btn_read_more">Read more</button></a> 
-                    </div>
-                    </div>
-   
-                        <div class="mosaiq_project_card mt-5">
-                          <h1 class="mt-3">Tiles</h1>
-                          <h3 class="mt-3">Imagining a flexible canvas -</h3>
-                          <a href="/tiles.html">
-                            <img src="/img/tiles.svg" alt="Mosaiq UI showing tiles or movable components" class="img-fluid">
-                          </a>
-                          <div class="read_more mt-5">
-                        <a href="/tiles.html"><button class="btn_read_more">Read more</button></a> 
-                      </div>
-                        </div>
-                 
-                      
-                <div class="mosaiq_project_card mt-5">
-                <h1>Design system & Components</h1>
-                <h3 class="subtitle">Consistency at scale</h3>
-                <p class="subtitle">Role: Junior UX/UI Designer</p>
-                <a href="designsystem.html">
-                    <img src="/img/components.svg" alt="Mosaiq lab components" class="img-fluid">
-                </a>
-                <div class="read_more mt-5">
-              <a href="/designsystem.html"><button class="btn_read_more">Read more</button></a> 
-            </div>
-            </div>
-          
-
-                  <div class="mosaiq_project_card mt-5">
-                  <h1>AI Modules & Templates</h1>
-                  <h3 class="subtitle">Structuring intelligent workflows</h3>
-                  <p class="subtitle">Role: Junior UX/UI Designer</p>
-                  <a href="/AImodules_templates.html">
-                    <img src="/img/AITemplates.svg" alt="UI showing AI Modules and Templates feature" class="img-fluid">
-                  </a>
-                  <div class="read_more mt-5">
-                <a href="/AImodules_templates.html"><button class="btn_read_more">Read more</button></a> 
-              </div>
-              </div>
-            </div>
---->
+      </div>
+    </div>
               
             <div class="arrow_top mt-5 text-end">
                 <a href="#top"><i class="bi bi-arrow-up-square top"></i></a>

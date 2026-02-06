@@ -214,11 +214,24 @@
 .review {
   display: block; 
   margin: 0 auto;
-  margin-top: 10%;
   margin-bottom: 10%;
-  max-width: 100%;
-  max-height: 100%;
+  color: white;
 }
+
+.review_section {
+background-color: black;
+color: white;
+margin-top: 10%;
+padding-top: 5%;
+padding-bottom: 5%;
+border-radius: 24px;
+}
+
+.review_text {
+  padding: 24px;
+}
+
+
   .arrow_top,
   .arrow_right {
     display: block;
