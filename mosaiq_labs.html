@@ -363,14 +363,19 @@
               <p class="mt-5">Synthesising data is the primarily function of the AI Assistant as well as the most critical part of users' workflow. Users heavily rely on the AI to process data, and to provide quick and reliable answers. We designed two methods to retrieve AI insights:</p>
                 <ul>
                   <li>
-                    <p>
+                    <h5>
                       Selecting Automatic AI insights
-                    </p>
+                    </h5>
                   </li>
                   <li>
-                    <p>
-                      Asking directly the AI
-                    </p>
+                    <h5>
+                      Asking the AI Assistant
+                    </h5>
+                  </li>
+                  <li>
+                    <h5>
+                      AI Modules
+                    </h5>
                   </li>
                 </ul>
             </div>
@@ -392,26 +397,61 @@
               </div>
               <div class="col-sm-6 mt-5">
                 <h3>Automatic AI insights</h3>
-                <p>
-                  The title of each article is a clickable link that takes users directly to the AI insights page. Here, the AI provides automatically the article's summary and key points offering users a quick view of the file's content. 
+                <p class="mt-3">
+                  The title of each article is a clickable link that takes users directly to the AI insights page. Here, the AI provides automatically the article's <strong>summary</strong> and <strong>key points</strong> offering users a quick view of the file's content. 
                 </p>
-                <ul>
-                  <li>
-                    <p class="subtitle">
-                    How might we enable users to save relevant insights?
-                  </p>
-                  </li>
-                </ul>
+                <p>
+                  Each card gives the option to copy the content of the card, or to <strong>save</strong> it 
+                </p>
               </div>
             </div>
 
             <div class="mosaiq_img">  
               <div class="row mt-5"> 
                 <div class="col-sm-12 mt-5">  
+                  <img src="/img/savedinsights1.jpg" class="img-fluid">
+                </div>
+                <div class="col-sm-12 mt-5">  
                   <img src="/img/saved insights2.jpg" class="img-fluid">
                 </div>
               </div>
             </div>
+
+            <div class="row mt-5">
+              <div class="col-sm-6 mt-5">
+              </div>
+              <div class="col-sm-6 mt-5">
+                <p>
+                  The saved cards are stored in <strong>Saved Insights</strong>. Each card is nested under the original file, which can be opened and closed by triggering the arrow.
+                </p>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-sm-6 mt-5"></div>
+              <div class="col-sm-6">
+                <h3>Asking the AI</h3>
+                 <p class="mt-3"> 
+                    In the context of chatting with the AI, design challenges spammed from technical interactions to psychological ones. In fact, the more sophisticated the AI became, the more the dinamic of the interaction mirrored that of a face to face conversation shifting from back and forth conversation to multilateral ones. Of course, the broader and deeper the research goes, the higher is the need to verify the veridicity of the answers.
+                  </p>
+                  <h5>Translating insights into "How might we..."</h5>
+                <li>
+                  <p class="subtitle">
+                    How might we offer provide visual cues to users showing exactly, and at all time, with which article/s is the assistant interacting with?
+                  </p>
+                </li>
+                <li>
+                  <p class="subtitle">
+                    How might we design ways for users to chat with the assistant in ways that resemble a natural conversation flow?
+                  </p>
+                </li>
+                <li>
+                  <p class="subtitle">
+                  How might we incorporate ways for users to view the source from which the answer has been extracted from?
+                </p>
+                </li>
+              </div>
+              </div>
 
   <div class="mosaiq_img">  
     <div class="row mt-5"> 
@@ -421,40 +461,14 @@
     </div>
   </div>
 
-  <div class="row mt-5">
-    <div class="col-sm-6 mt-5"></div>
-    <div class="col-sm-6">
-      <h3>Asking the AI</h3>
-       <p>
-          In the context of chatting with the AI, design challenges spammed from technical interactions to psychological ones. In fact, the more sophisticated the AI became, the higher the need to verify the outputs.
-        </p>
-
-      <li>
-        <p class="subtitle">
-          How might we offer provide vidual cues to users showing exactly, and at all time, with that is the assistant interacting with?
-        </p>
-      </li>
-      <li>
-        <p class="subtitle">
-          How might we design ways for users to chat with the assistant in ways that resemble a natural conversation flow?
-        </p>
-      </li>
-      <li>
-        <p class="subtitle">
-        How might we incorporate ways for users to view the source from which the answer has been extracted from?
-      </p>
-      </li>
-    </div>
-    </div>
-
 
               <div class="row mt-5">
                 <div class="col-sm-6 mt-5"></div>
                 <div class="col-sm-6 mt-5">
                   <p>
-                    When the assistant interact with any specific file from the database, the selected files' background changes colour to strengthen the visual cue between selected and unselected articles. 
+                    When the assistant interact with any specific file/s from the database, the files' background changes colour to strengthen the visual cue between selected and unselected articles. 
                     <br/><br/>
-                    On top of it, we added a <strong>“Reply to | 4 files”</strong> cue confirming the files analysed by the AI. We've added this cue to reinforce the visual feedback as selected files might not always be visible to the user. 
+                    On top of it, we added a <strong>“Reply to | 4 files”</strong> cue confirming which files is the AI currently analysing. We've added this cue to reinforce the visual feedback as selected files might not always be visible to the user. 
                   </p>
                   </div>
               </div>
@@ -472,6 +486,7 @@
                 <div class="col-sm-6 mt-5"></div>
                 <div class="col-sm-6 mt-5">
                   <p>
+                    As mentioned, the more powerful and sophisticated the AI answers became, the more pivotal it became to be able to understand the process behind the output.  
                     Influenced by the ChatGPT design, we’ve iterated on various version of the "reasoning behind the process". Eventually, we agreed that the thinking process should be triggered by the <strong>Logic</strong> CTA, as if enabled by default, it would create visual noise and break the communication flow. 
                     </p>
                     <p>
@@ -491,7 +506,7 @@
                   <div class="col-sm-6 mt-5"></div>
                   <div class="col-sm-6 mt-5">
                     <p>
-                      Just like in a face-to-face chat with a person, it is normal for the conversation to go back and forth, and take different tangents. New information, or different perceptions around an issue, enrich, confirm, or disprove our knowledge, requireing a reshape of the idea forming in our head. <br/><br/>
+                      Just like in a face-to-face chat with a person, it is normal for the conversation to go back and forth, and take different tangents. New information, or different perceptions around an issue, enrich, confirm, or disprove our knowledge, requiring a reshape of the idea forming in our head. <br/><br/>
                       And so it happens when researching. The more information we acquire, the more the back and forth before a cohesive thought is conceived. In this regard, the more sophsticated the assistant became in answering queries, the higher the need to create a conversation flow that resemble the natural one. To achieve this result, we enabled the <strong>"Reply"</strong> function, which allowed users to ask questions about a specific segment of the answer.
                     </p>
                   </div>
@@ -554,18 +569,17 @@
               <div class="row mt-5">
                 <div class="col-sm-6 mt-5"></div>
                 <div class="col-sm-6 mt-5">
-                <h3>Synthesising a series of prompts into one task - Introducing AI Modules for faster data processing and more accurate results</h3>              
+                <h3>AI Modules</h3>              
             <p class="mt-5"> 
-              However, we soon realise that all the prompt that users were giving to the AI, could easily be translated into AI Modules, aka lines of code that tells the AI what to do, and how to delivery it.
-            </p>
-            <li>
-              <p class="subtitle">
-              How might we integrate AI Modules in the flow?
-            </p>
-            </li>
+              The last two years have been quite an exciting time for the startup. The continuous interest in, and growth of, AI brought in new possibilities, including the development of AI Modules: lines of codes enclosing a predetermined task. 
                   <p>
-                    At this stage, the AI is capable to digest and synthesise a great deal of information, but still, it requires time to write down, every time, the steps to achieve the task at hand. This is where AI Modules brought the real revolution! With one click, users were able to skip all the steps, and achieve the wanted result! <strong>I was so impressed with our Dev team!</strong>
+                  AI Modules proved particularly powerful because they could be pre-set with the series of details instruction on how to perform a task, i.e. X Report, and the module would produce a deliverable following exactly the given directions, saving a considerable amount of time. <strong>I was so impressed with our Dev team!</strong>
                   </p>
+                  <li>
+                    <p class="subtitle">
+                    How might we integrate AI Modules in the workflow?
+                  </p>
+                  </li>
                 </div>
               </div>
 
