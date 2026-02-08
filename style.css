@@ -7,15 +7,6 @@
     --links:  rgb(248, 74, 5);
     --subtitle: #636161;
   }
-
- .body {
-    background-color: var(--background);
-  }
-  
-  .Header {
-    height: 100vh;
-    width: auto;
-  }
   
   h1,
   h2,
@@ -26,6 +17,14 @@
   p,
   a {
     font-family: var(--branding-font);
+  }
+
+  .pattern img {
+    display: block; 
+    margin: 0 auto;
+    width: 100%;
+    height: 100;
+    padding: 24px;
   }
 
 
