@@ -19,7 +19,11 @@
     font-family: var(--branding-font);
   }
 
-  .intro, .featured_projects_hp, .about_hp , .contact_hp {
+  .intro {
+    padding: 24px;
+  }
+
+   .featured_projects_hp, .about_hp , .contact_hp {
     padding: 24px;
     border-radius: 20px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
@@ -27,12 +31,6 @@
     margin: 24px;
     height: auto;
     color: var(--title-color);
-  }
-
-  .intro:hover {
-    background-color: #320A28;
-    color: var(--background);
-    transition: ease-in-out 0.5s;
   }
 
   .featured_projects_hp:hover {
@@ -330,6 +328,8 @@ text-decoration: overline;
     margin: 0 auto;
     margin-top: 15%;
     text-align: left;
+    height: auto;
+    margin-bottom: 15%;
   }
   
 .index {
