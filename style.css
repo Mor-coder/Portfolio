@@ -65,7 +65,7 @@
   }
 
 
- .intro h1 {
+ .title h1 {
     font-size: 4rem;
     font-weight: bold;
   }
@@ -173,6 +173,15 @@
     font-weight: 500;
   }
 
+  .full-case-study {
+    border: 1px dotted rgba(0,0,0,0.08);
+    background: rgba(0,0,0,0.02);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    padding: 52px 52px;
+    margin: 16px;
+    border-radius: 20px;
+  }
+  
   .card-meta {
     min-height: 1.25rem; /* or match overline height */
     margin-bottom: 0.5rem;
@@ -196,20 +205,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .case_study_brief h3 {
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  .project_title {
-    font-size: 200px;
-  }
-
-  .project_subtitle {
-    font-size: 100px;
-    color: var(--subtitle);
-  }
-
   .subtitle {
     color: var(--subtitle);
   }
@@ -217,17 +212,6 @@
   .mosaiq_subtitle {
     font-family: 'Times New Roman', Times, serif;
   }
-
-  .mosaiq_img_container {
-    display: flex; 
-    justify-content: center; /* horizontal centering */
-    align-items: center;     /* vertical centering */
-    height: 100vh;
-    width: 100%;             /* ensure full width */
-    margin: 0;               /* remove any default margin */
-    padding: 0;              /* remove any default padding */
-    box-sizing: border-box;
-}
 
 .mosaiq_img img {
     max-width: 80%;
@@ -265,7 +249,7 @@
 }
 
 .review_section {
-background-color: black;
+background-color: #320A28;
 color: white;
 margin-top: 10%;
 padding-top: 5%;
@@ -443,4 +427,168 @@ a:focus, button:focus {
 main {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+/* =========================
+   MOSAIQ LABS — CLEAN PATCH
+   Paste at the bottom of style.css
+========================= */
+
+/* Better readable defaults for case-study pages */
+.projects_section {
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Title styling: responsive + consistent */
+.project_title {
+  font-family: var(--branding-font);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.05;
+  font-size: 200px;
+  color: var(--title-color);
+}
+
+.project_subtitle {
+  font-family: var(--branding-font);
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 100px;
+  color: var(--subtitle);
+}
+
+/* Brief block */
+.case_study_brief h3 {
+  font-family: var(-branding-font);
+  font-weight: 500;
+  line-height: 1.35;
+  font-size: clamp(1.15rem, 1.8vw, 1.6rem);
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+
+/* Overline rhythm */
+.overline {
+  margin-top: 0.25rem;
+  margin-bottom: 0.4rem;
+  color: rgba(27, 27, 27, 0.55);
+}
+
+/* Make the “Role/Team/Timeline” values feel intentional */
+.row h4 {
+  color: var(--title-color);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+/* Improve paragraph readability in case studies */
+main p {
+  color: var(--text-color);
+  line-height: 1.7;
+  max-width: 70ch;
+}
+
+/* Lists: stop paragraphs inside <li> from adding weird spacing */
+main li p {
+  margin-bottom: 0.35rem;
+}
+
+/* Image container: remove 100vh lock and add consistent spacing */
+.mosaiq_img_container {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 2.5rem 0;
+  padding: 0;
+}
+
+/* Images: consistent max width + spacing + subtle polish */
+.mosaiq_img img,
+.mosaiq_img .img-fluid {
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+}
+
+/* Caption alignment */
+.text-center.small,
+.text-center small {
+  display: block;
+  margin-top: 0.75rem;
+  color: rgba(27, 27, 27, 0.65);
+}
+
+/* Divider: real visual divider */
+.divider {
+  height: 1px;
+  background: rgba(27, 27, 27, 0.1);
+  margin: 3rem 0;
+  padding: 0;
+}
+
+/* Full case study container: keep your card feel but calmer */
+.full-case-study {
+  border: 1px solid rgba(27, 27, 27, 0.08);
+  background: rgba(0, 0, 0, 0.02);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.10);
+  padding: 3rem;
+  margin: 2rem 0;
+  border-radius: 20px;
+}
+
+/* Make “Full case study” feel like a new chapter */
+#full-case-study .overline {
+  color: rgba(27, 27, 27, 0.6);
+}
+
+/* Reviews section: same vibe but tighter spacing + better readability */
+.review_section {
+  background-color: #320A28;
+  color: white;
+  margin-top: 3rem;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+}
+
+.review_section h3 {
+  font-family: var(--title-font);
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.review_text p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 65ch;
+}
+
+.review {
+  max-width: 140px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Skip link styling */
+a[href="#full-case-study"] {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a[href="#full-case-study"]:hover {
+  text-decoration: overline;
+}
+
+/* Small responsive padding improvement */
+@media (max-width: 576px) {
+  .full-case-study {
+    padding: 2rem 1.25rem;
+  }
+
+  .review_section {
+    padding: 2rem 1.25rem;
+  }
 }
