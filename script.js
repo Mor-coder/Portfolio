@@ -108,3 +108,5 @@ class LightboxImage extends HTMLElement {
 }
 
 customElements.define("lightbox-img", LightboxImage);
+
+
