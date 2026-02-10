@@ -260,11 +260,13 @@ border-radius: 24px;
 }
 
 
-  .arrow_top,
-  .arrow_right {
+  .arrow_top a,
+  .arrow_right a {
     display: block;
     text-align: end; 
     text-decoration: none;
+    font-size: 16px;
+    color: var(--title-color);
   }
 
   .nextproject,
@@ -274,10 +276,9 @@ border-radius: 24px;
 
 
   .bi-arrow-up-square,
-  .bi-arrow-right-short,
+  .bi-arrow-right-square,
   .bi-arrow-left-short {  
     color: var(--title-color);
-    font-size: 1.5em;
   }
 
 
@@ -480,6 +481,16 @@ main {
   color: var(--title-color);
   font-weight: 600;
   margin-bottom: 0.6rem;
+}
+
+/* Hero img */
+.mosaiq_hero_img {
+  display: block; 
+  padding: 16px;
+  margin-top: 20%;
+  margin-bottom: 10%;
+  background-color: var(--background);
+  border-radius: 20px;
 }
 
 /* Improve paragraph readability in case studies */
