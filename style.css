@@ -317,6 +317,10 @@ border-radius: 24px;
   align-items: center;
 }
 
+.next_project {
+  text-align: end;
+}
+
 .arrow_left a,
 .arrow_right a {
   text-decoration: none;
