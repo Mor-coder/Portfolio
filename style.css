@@ -298,25 +298,33 @@ border-radius: 24px;
   padding: 24px;
 }
 
+.arrow_top a {
+  display: block;
+  text-align: end;
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--title-color);
+}
 
-  .arrow_top a,
-  .arrow_right a {
-    display: block;
-    text-align: end; 
-    text-decoration: none;
-    font-size: 16px;
-    color: var(--title-color);
-  }
 
-  .nextproject,
-  .previousproject {
-    color: var(--title-color);
-  }
+.project_nav {
+  display: flex;
+  justify-content: space-between; /* pushes them to opposite sides */
+  align-items: center;
+}
+
+.arrow_left a,
+.arrow_right a {
+  text-decoration: none;
+  font-size: 16px;
+  color: var(--title-color);
+}
+
 
 
   .bi-arrow-up-square,
   .bi-arrow-right-square,
-  .bi-arrow-left-short {  
+  .bi-arrow-left-short, .bi-arrow-left-square {  
     color: var(--title-color);
   }
 
