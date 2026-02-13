@@ -8,6 +8,10 @@
     --subtitle: #636161;
     --box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
   }
+
+  .body {
+    background-color: #fefefd;
+  }
   
   h1,
   h2,
