@@ -70,586 +70,752 @@
     </nav>
   </header>
 
-  <main class="container mt-5">
-    <div id="top"></div>
+<!-- =========================================================
+     MosaiQ Labs — Full Case Study (Rephrased, Arva-Optimised)
+     Changes:
+     - Keeps ONLY 1 “How might we” per chapter (3 total)
+     - Replaces the rest with Design goal / Constraints / Success criteria
+     - Adds decision + trade-offs language (more senior / Arva-aligned)
+     - Keeps your existing images + class names so it’s copy/paste friendly
+========================================================= -->
 
-    <div class="backlink mb-3">
-      <a href="/mosaiq_labs.html"><i class="bi bi-arrow-left-short"></i> Go back</a>
+<main class="container mt-5">
+  <div id="top"></div>
+
+  <div class="backlink mb-3">
+    <a href="/mosaiq_labs.html"><i class="bi bi-arrow-left-short"></i> Go back</a>
+  </div>
+
+  <!-- ========================= -->
+  <!-- HEADER -->
+  <!-- ========================= -->
+  <div class="projects_section">
+    <div class="row">
+      <h1 class="project_title mb-2">MosaiQ Labs</h1>
+      <h2 class="project_subtitle mb-4">Full case study — designing trust in AI research workflows</h2>
     </div>
+  </div>
 
-    <!-- ========================= -->
-    <!-- FULL CASE STUDY (DEEP DIVE) -->
-    <!-- ========================= -->
+  <!-- HERO -->
+  <div class="row mosaiq_hero_img mt-4">
+    <div class="col-sm-12">
+      <img
+        src="/img/mosaiq_case_hero_img.svg"
+        class="img-fluid"
+        alt="MosaiQ Labs case study hero image"
+      />
+    </div>
+  </div>
 
-    <div class="projects_section">
-      <div class="row">
-        <h1 class="project_title mb-2">MosaiQ Labs</h1>
-        <h2 class="project_subtitle mb-4">Full case study — designing trust in AI research workflows</h2>
+  <!-- ========================= -->
+  <!-- SUMMARY -->
+  <!-- ========================= -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Full case study</div>
+    </div>
+    <div class="col-sm-6">
+      <p>
+        <strong>NDA-safe deep dive.</strong> This case study covers shipped workflows and interaction patterns that helped finance and
+        market-research teams manage large datasets and <strong>verify AI outputs</strong> when producing investment-grade deliverables.
+      </p>
+      <p class="subtitle">
+        The story follows three linked problems: collecting data at scale, synthesising it with AI while preserving provenance,
+        and turning insights into repeatable deliverables.
+      </p>
+    </div>
+  </div>
+
+  <!-- CONTEXT SNAPSHOT -->
+  <div class="row mt-4">
+    <div class="col-sm-6">
+      <div class="overline">Context snapshot</div>
+    </div>
+    <div class="col-sm-6">
+      <ul>
+        <li><p class="subtitle"><strong>Audience:</strong> finance consultants and researchers accountable for decision-ready outputs</p></li>
+        <li><p class="subtitle"><strong>Environment:</strong> large, messy datasets with changing scope and tight deadlines</p></li>
+        <li><p class="subtitle"><strong>Primary risk:</strong> users can’t adopt AI if they can’t quickly verify claims</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CONSTRAINTS -->
+  <div class="row mt-4">
+    <div class="col-sm-6">
+      <div class="overline">Constraints</div>
+    </div>
+    <div class="col-sm-6">
+      <ul>
+        <li><p class="subtitle"><strong>High-stakes outputs:</strong> users needed to defend claims to stakeholders</p></li>
+        <li><p class="subtitle"><strong>Evolving AI capability:</strong> retrieval + model behaviour changed over time</p></li>
+        <li><p class="subtitle"><strong>Engineering-led delivery:</strong> prioritised the shortest credible path to shipped value</p></li>
+        <li><p class="subtitle"><strong>NDA:</strong> examples and data are anonymised</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="divider mt-5"></div>
+
+  <!-- ========================= -->
+  <!-- USERS & GOALS -->
+  <!-- ========================= -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Users &amp; goals</div>
+    </div>
+    <div class="col-sm-6">
+      <p>
+        Our primary users were finance consultants and researchers responsible for recommendations under uncertainty.
+        Their constraint wasn’t domain knowledge — it was <strong>time + accountability</strong>.
+        They needed speed, and a defensible evidence trail.
+      </p>
+
+      <h3 class="mt-4">Key needs we designed for</h3>
+      <ul class="mt-3">
+        <li><p class="subtitle">Collect and browse large volumes of content without losing context</p></li>
+        <li><p class="subtitle">Get fast synthesis — and <strong>verify what the AI used</strong> to form an answer</p></li>
+        <li><p class="subtitle">Organise findings into repeatable deliverables (memos, reports, summaries)</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="/img/Archetype 2.svg"
+          class="img-fluid"
+          alt="Blurred persona image (blurred due to NDA)"
+        />
+      </div>
+      <p class="small text-center mt-2">Persona image is blurred due to NDA.</p>
+    </div>
+  </div>
+
+  <div class="divider mt-5"></div>
+
+  <!-- ================================================= -->
+  <!-- CASE STUDY 1: COLLECT + ORGANISE -->
+  <!-- ================================================= -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Case study</div>
+    </div>
+    <div class="col-sm-6">
+      <h3>1) Collecting and managing data at scale</h3>
+
+      <p class="mt-3">
+        As teams scaled their research, datasets became larger and messier: mixed file types, partial uploads, and content captured from many sources.
+        Three problems started to block progress:
+      </p>
+
+      <ul class="mt-3">
+        <li><p class="subtitle">Uploading was inconsistent (different source types, parsing failures)</p></li>
+        <li><p class="subtitle">Browsing slowed down as databases grew</p></li>
+        <li><p class="subtitle">Selecting the right subset of files for analysis wasn’t always obvious</p></li>
+      </ul>
+
+      <!-- Keep ONE HMW per chapter -->
+      <h5 class="mt-4">How might we…</h5>
+      <p class="subtitle">
+        Help users move from “I have a pile of stuff” to “I know what I’m analysing” in as few steps as possible?
+      </p>
+
+      <h5 class="mt-4">Design goal</h5>
+      <p class="subtitle">
+        Reduce scanning and selection effort while keeping users oriented inside large research databases.
+      </p>
+
+      <h5 class="mt-4">Success criteria</h5>
+      <ul class="mt-3">
+        <li><p class="subtitle">Users can narrow and select relevant sources quickly without losing context</p></li>
+        <li><p class="subtitle">Users understand upload state and failure reasons without guesswork</p></li>
+        <li><p class="subtitle">The interface scales as content volume grows (no “control panel” feel)</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Before / After -->
+  <div class="row mt-5">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="img/UIoldprojectpage.svg"
+          class="img-fluid"
+          alt="Before: project page UI showing basic database list with limited file support"
+        />
+      </div>
+      <p class="text-center small mt-2"><i>Before: limited file support and basic database browsing</i></p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="img/project_page.png"
+          class="img-fluid"
+          alt="After: updated project page UI showing broader file types, tabs, and filters"
+        />
+      </div>
+      <p class="text-center small mt-2"><i>After: broader file support + tabs and filters for faster skimming</i></p>
+    </div>
+  </div>
+
+  <!-- Decision + rationale -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Decision</div>
+    </div>
+    <div class="col-sm-6">
+      <p>
+        We redesigned the project page into a <strong>research hub</strong> optimised for “skim → narrow → select → ask”.
+        The objective was to make the default workflow fast for expert users without hiding critical state.
+      </p>
+
+      <h5 class="mt-4">What we shipped</h5>
+      <ul class="mt-3">
+        <li><p class="subtitle">Checkbox selection for single/multi-select workflows (batch analysis + comparison)</p></li>
+        <li><p class="subtitle">Tabs to group content by type/work stage and reduce scanning</p></li>
+        <li><p class="subtitle">Filters placed above tabs to match “narrow first” behaviour</p></li>
+        <li><p class="subtitle">Clearer failure states for restricted/unparseable content (e.g., paywalls)</p></li>
+      </ul>
+
+      <h5 class="mt-4">Trade-offs</h5>
+      <ul class="mt-3">
+        <li><p class="subtitle">Avoided adding too many controls (advanced filters) to prevent a “dashboard overload” experience</p></li>
+        <li><p class="subtitle">Prioritised the most common narrowing behaviours first; left edge-case sorting for later iteration</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Add content + extension -->
+  <div class="row mt-5">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="/img/UIprojectpageaddcontentmenu.svg"
+          class="img-fluid"
+          alt="Add Content menu on project page"
+        />
       </div>
     </div>
 
-    <!-- HERO (optional: keep if you want consistency across pages) -->
-    <div class="row mosaiq_hero_img mt-4">
-      <div class="col-sm-12">
-        <img src="/img/mosaiq_case_hero_img.svg" class="img-fluid" alt="MosaiQ Labs case study hero image" />
+    <div class="col-sm-12 mt-4">
+      <div class="mosaiq_img">
+        <img
+          src="/img/extension_screen.svg"
+          class="img-fluid"
+          alt="MosaiQ browser extension"
+        />
       </div>
+      <p class="text-center small mt-2"><i>Browser extension for capturing multiple pages during early research</i></p>
     </div>
+  </div>
 
-    <!-- SUMMARY (match MosaiQ tone: concise, outcomes-led, NDA-safe) -->
-    <div class="row mt-5">
+  <div class="row mt-4">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <p>Users could add content in two ways:</p>
+      <ul class="mt-3">
+        <li><p class="subtitle">From inside the project: use <strong>Add Content</strong> and choose a source type</p></li>
+        <li><p class="subtitle">From outside the project: use the extension to capture multiple pages quickly</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Reviews (optional: keep) -->
+  <div class="review_section mt-5">
+    <div class="row">
       <div class="col-sm-6">
-        <div class="overline">Full case study</div>
+        <img src="/img/review_light.svg" alt="Quotation marks icon for review section" class="review" />
       </div>
       <div class="col-sm-6">
-        <p>
-          <strong>NDA-safe deep dive.</strong> This page walks through the key design explorations and shipped patterns
-          that helped finance and market-research teams manage large datasets and trust AI outputs in high-stakes work.
-        </p>
-        <p class="subtitle">
-          The story is organised around three linked problems: <strong>collecting</strong> data at scale,
-          <strong>synthesising</strong> it with AI without losing provenance, and <strong>turning insights into deliverables</strong>.
-        </p>
-      </div>
-    </div>
+        <div class="review_text">
+          <h3>“I just know where to put all my data and analyse it — my process is much smoother.”</h3>
+          <p>
+            “Whether I'm preparing a financial report or gathering passive insights for future reference, MosaiQ ensures everything is in one place.
+            The ease of transitioning from passive accumulation to active analysis has transformed our workflows.”
+          </p>
+          <p class="text-end"><strong><i>Samantha, Financial Associate</i></strong></p>
 
-    <!-- QUICK CONTEXT SNAPSHOT (keeps it aligned with main case study structure) -->
-    <div class="row mt-4">
-      <div class="col-sm-6">
-        <div class="overline">Context snapshot</div>
-      </div>
-      <div class="col-sm-6">
-        <ul>
-          <li><p class="subtitle"><strong>Audience:</strong> finance consultants and researchers responsible for investment-grade outputs</p></li>
-          <li><p class="subtitle"><strong>Environment:</strong> large, messy datasets with changing scope and tight deadlines</p></li>
-          <li><p class="subtitle"><strong>Design focus:</strong> reduce cognitive load + make AI behaviour legible</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="divider mt-5"></div>
-
-    <!-- ========================= -->
-    <!-- USERS & GOALS -->
-    <!-- ========================= -->
-    <div class="row mt-5">
-      <div class="col-sm-6">
-        <div class="overline">Users & goals</div>
-      </div>
-      <div class="col-sm-6">
-        <p>
-          Our primary users were finance consultants — highly capable at interpreting market signals, and accountable for
-          producing clear recommendations under uncertainty. The product needed to support speed without compromising confidence.
-        </p>
-
-        <h3 class="mt-4">Key needs we designed for</h3>
-        <ul class="mt-3">
-          <li><p class="subtitle">Collect and browse large volumes of content without losing context</p></li>
-          <li><p class="subtitle">Synthesize information quickly — and verify what the AI used to form an answer</p></li>
-          <li><p class="subtitle">Organise findings into repeatable deliverables (memos, reports, summaries)</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img
-            src="/img/Archetype 2.svg"
-            class="img-fluid"
-            alt="Blurred persona image created for the case study (blurred due to NDA)"
-          />
-        </div>
-        <p class="small text-center mt-2">Persona image is blurred due to NDA.</p>
-      </div>
-    </div>
-
-    <div class="divider mt-5"></div>
-
-    <!-- ========================= -->
-    <!-- CASE STUDY 1: COLLECT + ORGANISE -->
-    <!-- ========================= -->
-    <div class="row mt-5">
-      <div class="col-sm-6">
-        <div class="overline">Case study</div>
-      </div>
-      <div class="col-sm-6">
-        <h3>Collecting and managing data at scale</h3>
-        <p class="mt-3">
-          Early on, the platform supported fewer file types, analysis was slower, and the assistant’s scope was mostly limited
-          to uploaded files (not the web). As teams scaled their research, three issues appeared: uploading was inconsistent,
-          browsing was slow, and selecting the right subset of files for analysis wasn’t obvious.
-        </p>
-
-        <h5 class="mt-4">How might we…</h5>
-        <ul class="mt-3">
-          <li><p class="subtitle">Help users collect, find, and browse documents in as few steps as possible?</p></li>
-          <li><p class="subtitle">Make filtering and ordering fast without turning the UI into a control panel?</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Before / After -->
-    <div class="row mt-5">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img
-            src="img/UIoldprojectpage.svg"
-            class="img-fluid"
-            alt="Old project page UI showing a basic database list with limited file support"
-          />
-        </div>
-        <p class="text-center small mt-2">
-          <i>Before: limited file support and basic database browsing</i>
-        </p>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img
-            src="img/project_page.png"
-            class="img-fluid"
-            alt="Updated project page UI showing broader file types, tabs, and filters"
-          />
-        </div>
-        <p class="text-center small mt-2">
-          <i>After: broader file support + tabs and filters for faster skimming</i>
-        </p>
-      </div>
-    </div>
-
-    <!-- Design -->
-    <div class="row mt-5">
-      <div class="col-sm-6">
-        <div class="overline">Design decisions</div>
-      </div>
-      <div class="col-sm-6">
-        <p>
-          Inspired by patterns from Finder and Gmail, the project page evolved into a “research hub”:
-          clearer structure, quicker selection, and better feedback when uploads fail.
-        </p>
-        <ul class="mt-3">
-          <li><p class="subtitle">Added checkboxes for fast single/multi-select workflows</p></li>
-          <li><p class="subtitle">Introduced tabs to group content and reduce scanning effort</p></li>
-          <li><p class="subtitle">Placed filters above tabs for “skim and narrow” behaviour</p></li>
-          <li><p class="subtitle">Improved failure states for restricted or unparseable content (e.g., paywalled pages)</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Add content + extension -->
-    <div class="row mt-5">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="/img/UIprojectpageaddcontentmenu.svg" class="img-fluid" alt="Add Content menu on project page" />
-        </div>
-      </div>
-
-      <div class="col-sm-12 mt-4">
-        <div class="mosaiq_img">
-          <img src="/img/extension_screen.svg" class="img-fluid" alt="MosaiQ browser extension" />
-        </div>
-        <p class="text-center small mt-2"><i>Browser extension for capturing multiple pages during early research</i></p>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <p>Users could add content in two ways:</p>
-        <ul class="mt-3">
-          <li><p class="subtitle">From inside the project: use <strong>Add Content</strong> and choose a source type</p></li>
-          <li><p class="subtitle">From outside the project: use the extension to capture multiple pages quickly</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Reviews -->
-    <div class="review_section mt-5">
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="/img/review_light.svg" alt="Quotation marks icon for review section" class="review" />
-        </div>
-        <div class="col-sm-6">
-          <div class="review_text">
-            <h3>“I just know where to put all my data and analyse it — my process is much smoother.”</h3>
-            <p>
-              “Whether I'm preparing a financial report or gathering passive insights for future reference, MosaiQ ensures everything is in one place.
-              The ease of transitioning from passive accumulation to active analysis has transformed our workflows.”
-            </p>
-            <p class="text-end"><strong><i>Samantha, Financial Associate</i></strong></p>
-
-            <h3 class="mt-5">“I’ve accumulated data and been able to produce investment memos 5x faster.”</h3>
-            <p>
-              “From accumulating insights on emerging sectors to diving deep into potential investments, MosaiQ is my go-to.
-              It organises both my data and my thoughts, helping me pivot to decision-making effortlessly.”
-            </p>
-            <p class="text-end"><strong><i>Jasmine, Associate — Venture Capital</i></strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="divider mt-5"></div>
-
-    <!-- ========================= -->
-    <!-- CASE STUDY 2: SYNTHESIS + TRUST -->
-    <!-- ========================= -->
-    <div class="row mt-5">
-      <div class="col-sm-6">
-        <div class="overline">Case study</div>
-      </div>
-      <div class="col-sm-6">
-        <h3>Synthesising data — designing trust in AI outputs</h3>
-        <p class="mt-3">
-          As the assistant became more capable, the UX challenge shifted from “can it answer?” to “can users verify it?”.
-          We supported three ways to retrieve insights while keeping provenance visible:
-        </p>
-        <ul class="mt-3">
-          <li><p class="subtitle"><strong>Automatic AI insights</strong> (summaries + key points)</p></li>
-          <li><p class="subtitle"><strong>Chat with the assistant</strong> (queries + follow-ups)</p></li>
-          <li><p class="subtitle"><strong>AI Modules</strong> (repeatable tasks for consistent outputs)</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row mt-5">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="/img/AI_insights 1.svg" class="img-fluid" alt="AI insights UI iteration 1" />
-        </div>
-      </div>
-      <div class="col-sm-12 mt-4">
-        <div class="mosaiq_img">
-          <img src="/img/AIinsights.svg" class="img-fluid" alt="AI insights UI iteration 2" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Automatic insights -->
-    <div class="row mt-5">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <h3>Automatic AI insights</h3>
-        <p class="mt-3">
-          Each file surfaced a fast “understand it now” layer: <strong>summary</strong> and <strong>key points</strong>.
-          Cards could be copied or saved for later synthesis.
-        </p>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="/img/savedinsights1.jpg" class="img-fluid" alt="Saved Insights UI screenshot 1" />
-        </div>
-      </div>
-      <div class="col-sm-12 mt-4">
-        <div class="mosaiq_img">
-          <img src="/img/saved insights2.jpg" class="img-fluid" alt="Saved Insights UI screenshot 2" />
+          <h3 class="mt-5">“I’ve accumulated data and been able to produce investment memos 5x faster.”</h3>
+          <p>
+            “From accumulating insights on emerging sectors to diving deep into potential investments, MosaiQ is my go-to.
+            It organises both my data and my thoughts, helping me pivot to decision-making effortlessly.”
+          </p>
+          <p class="text-end"><strong><i>Jasmine, Associate — Venture Capital</i></strong></p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="row mt-4">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <p>
-          Saved cards lived in <strong>Saved Insights</strong>, nested under their source file so users could reopen context and keep
-          provenance intact.
-        </p>
+  <div class="divider mt-5"></div>
+
+  <!-- ================================================= -->
+  <!-- CASE STUDY 2: SYNTHESIS + TRUST -->
+  <!-- ================================================= -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Case study</div>
+    </div>
+    <div class="col-sm-6">
+      <h3>Synthesising data — designing trust in AI outputs</h3>
+
+<p class="mt-3">
+  As the assistant became more capable, the core UX risk shifted from retrieval to trust.
+  Users could get answers quickly — but before relying on them in investment decisions, they needed to verify where claims came from.
+</p>
+
+<p>
+  Through customer conversations and observing real workflows, one pattern was consistent: when provenance wasn’t immediately visible,
+  users slowed down, rechecked sources manually, or avoided using the output altogether.
+</p>
+
+<h5 class="mt-4">Design goal</h5>
+
+<p class="subtitle">
+  Make AI outputs verifiable in seconds — without interrupting conversational flow.
+</p>
+
+<h5 class="mt-4">Constraints</h5>
+
+<ul class="mt-3">
+
+<li>
+<p class="subtitle">
+Users needed fast answers, so verification couldn’t introduce friction
+</p>
+</li>
+
+<li>
+<p class="subtitle">
+Showing too much system detail by default reduced readability and increased cognitive load
+</p>
+</li>
+
+<li>
+<p class="subtitle">
+Evidence needed to stay connected to the exact claim it supported
+</p>
+</li>
+
+</ul>
+
+<h5 class="mt-4">Decision</h5>
+
+<p class="subtitle">
+I designed a set of lightweight, on-demand verification patterns embedded directly in the interaction:
+</p>
+
+<ul class="mt-3">
+
+<li>
+<p class="subtitle">
+<strong>Citations</strong> showing the exact source behind each claim
+</p>
+</li>
+
+<li>
+<p class="subtitle">
+<strong>Scope visibility</strong> indicating which files the assistant was analysing
+</p>
+</li>
+
+<li>
+<p class="subtitle">
+<strong>On-demand reasoning</strong>, accessible when needed but hidden by default
+</p>
+</li>
+
+</ul>
+
+<h5 class="mt-4">Trade-off</h5>
+
+<p class="subtitle">
+Early explorations exposed full reasoning by default, but this made conversations harder to scan.
+Progressive disclosure provided the right balance: verification was always available without overwhelming the primary workflow.
+</p>
+
+<h5 class="mt-4">Outcome</h5>
+
+<p class="subtitle">
+These patterns allowed users to verify outputs quickly and stay in flow.
+In customer calls and demos, teams reported higher confidence using AI-generated insights and reduced need to manually cross-reference sources.
+</p>
+</div>
+  </div>
+
+  <!-- Automatic insights -->
+  <div class="row mt-5">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <h3>Automatic AI insights</h3>
+      <p class="mt-3">
+        We added a fast “understand it now” layer per file (summary + key points) that users could save.
+        Saved insights stayed attached to their <strong>source context</strong> so users could reopen evidence without hunting.
+      </p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img src="/img/savedinsights1.jpg" class="img-fluid" alt="Saved Insights UI screenshot 1" />
+      </div>
+    </div>
+    <div class="col-sm-12 mt-4">
+      <div class="mosaiq_img">
+        <img src="/img/saved insights2.jpg" class="img-fluid" alt="Saved Insights UI screenshot 2" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <p>
+        Saved cards lived in <strong>Saved Insights</strong>, nested under their source file to preserve provenance.
+      </p>
+    </div>
+  </div>
+
+  <!-- Chat + verification patterns -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Decision</div>
+    </div>
+    <div class="col-sm-6">
+      <h3>Chat verification patterns</h3>
+      <p class="mt-3">
+        We designed a set of lightweight, always-available cues that answer three questions:
+        <strong>What is being analysed?</strong> <strong>Where did this claim come from?</strong> <strong>How did it get there?</strong>
+      </p>
+
+      <h5 class="mt-4">What we shipped</h5>
+      <ul class="mt-3">
+        <li><p class="subtitle"><strong>Scope visibility:</strong> selection state + “Replying to | X files”</p></li>
+        <li><p class="subtitle"><strong>On-demand reasoning:</strong> reasoning available when needed, hidden by default</p></li>
+        <li><p class="subtitle"><strong>Focused follow-ups:</strong> Reply threading to interrogate a specific segment</p></li>
+        <li><p class="subtitle"><strong>Citations designed for context:</strong> readable evidence previews + “View in source”</p></li>
+      </ul>
+
+      <h5 class="mt-4">Trade-offs</h5>
+      <ul class="mt-3">
+        <li><p class="subtitle"><strong>Didn’t show reasoning by default:</strong> it reduced scanability and created constant noise</p></li>
+        <li><p class="subtitle"><strong>Kept verification in-flow:</strong> separate “evidence pages” slowed users down and broke momentum</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Scope visibility image -->
+  <div class="row mt-5">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="/img/UIprojectpagevisualfeedback.svg"
+          class="img-fluid"
+          alt="Visual feedback for selected files on project page"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <p>
+        Selected files switch to a darker background, and scope text (e.g. <strong>“Replying to | 4 files”</strong>) clarifies what the assistant is using
+        at the moment the user asks a question.
+      </p>
+    </div>
+  </div>
+
+  <!-- On-demand reasoning image -->
+  <div class="row mt-5">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="/img/UIprojectpagecitationsv3.svg"
+          class="img-fluid"
+          alt="On-demand reasoning pattern iteration"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <p>
+        We used <strong>progressive disclosure</strong> for reasoning: available when users need to verify, hidden when they don’t.
+        This kept the conversation readable while still enabling deeper inspection.
+      </p>
+    </div>
+  </div>
+
+  <!-- Reply threading image -->
+  <div class="row mt-5">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="/img/assistant_reply.svg"
+          class="img-fluid"
+          alt="Reply feature enabling follow-up questions on a specific answer segment"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <p>
+        Reply threading supports investigation-style behaviour (“challenge this”, “expand that assumption”) without losing the broader thread.
+      </p>
+    </div>
+  </div>
+
+  <!-- Citations images -->
+  <div class="row mt-5">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="/img/UIprojectpagecitations.svg"
+          class="img-fluid"
+          alt="Citation bubble showing text context from source"
+        />
       </div>
     </div>
 
-    <!-- Asking the AI -->
-    <div class="row mt-5">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <h3>Asking the AI</h3>
-        <p class="mt-3">
-          Research doesn’t move in a straight line. Users needed to stay oriented (what’s selected, what’s being analysed)
-          and verify outputs quickly — without breaking flow.
-        </p>
-
-        <h5 class="mt-4">How might we…</h5>
-        <ul class="mt-3">
-          <li><p class="subtitle">Make it obvious which files the assistant is using — at all times?</p></li>
-          <li><p class="subtitle">Support natural follow-ups and tangents without losing the thread?</p></li>
-          <li><p class="subtitle">Help users trace answers back to sources and understand context?</p></li>
-        </ul>
+    <div class="col-sm-12 mt-4">
+      <div class="mosaiq_img">
+        <img
+          src="/img/chart.png"
+          class="img-fluid"
+          alt="Citation bubble showing chart context from source"
+        />
       </div>
     </div>
 
-    <div class="row mt-5">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="/img/UIprojectpagevisualfeedback.svg" class="img-fluid" alt="Visual feedback for selected files on project page" />
+    <div class="col-sm-12 mt-4">
+      <div class="mosaiq_img">
+        <img
+          src="/img/graph.png"
+          class="img-fluid"
+          alt="Citation bubble showing graph context from source"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <p>
+        Citations were tuned for <strong>quick context</strong>: readable evidence previews, support for charts/graphs/tables, and a fast path to full context via
+        <strong>View in source</strong>.
+      </p>
+    </div>
+  </div>
+
+  <div class="divider mt-5"></div>
+
+  <!-- ================================================= -->
+  <!-- CASE STUDY 3: DELIVERABLES -->
+  <!-- ================================================= -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Case study</div>
+    </div>
+    <div class="col-sm-6">
+      <h3>3) Turning research into deliverables</h3>
+      <p class="mt-3">
+        As MosaiQ matured, customers needed more than answers — they needed <strong>repeatable deliverables</strong>.
+        Reports and memos were the output of the job, not an export step.
+      </p>
+
+      <!-- Keep ONE HMW per chapter -->
+      <h5 class="mt-4">How might we…</h5>
+      <p class="subtitle">
+        Help users turn verified insights into a structured narrative without starting from a blank page?
+      </p>
+
+      <h5 class="mt-4">Design goal</h5>
+      <p class="subtitle">
+        Provide structure and reuse while keeping deliverables editable, defensible, and easy to iterate.
+      </p>
+
+      <h5 class="mt-4">Success criteria</h5>
+      <ul class="mt-3">
+        <li><p class="subtitle">Users can assemble deliverables faster using saved insights and reusable structure</p></li>
+        <li><p class="subtitle">Outputs preserve provenance (where content came from)</p></li>
+        <li><p class="subtitle">Teams can standardise quality without locking into rigid formats</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- AI Modules -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Decision</div>
+    </div>
+    <div class="col-sm-6">
+      <h3>AI Modules</h3>
+      <p class="mt-3">
+        We introduced <strong>AI Modules</strong> as pre-configured tasks that produce consistent outputs (e.g., “X Report”).
+        This reduced prompt rewriting and improved repeatability across teams.
+      </p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img
+          src="/img/InvokeAIModules.svg"
+          class="img-fluid"
+          alt="Invoking an AI Module from the assistant"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- Review -->
+  <div class="review_section mt-5">
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="/img/review_light.svg" alt="Quotation marks icon for review section" class="review" />
+      </div>
+      <div class="col-sm-6">
+        <div class="review_text">
+          <h3>“The perfect companion throughout my research &amp; report-building process.”</h3>
+          <p>
+            “Working in market research means juggling vast amounts of data. MosaiQ helped me centralise it. Whether I'm passively
+            building understanding or actively preparing a report, the platform keeps me steps ahead.”
+          </p>
+          <p class="text-end"><strong><i>Carlos, Research Coordinator — Market Research</i></strong></p>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="row mt-4">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <p>
-          Selected files switch to a darker background to strengthen the selected/unselected distinction. We also introduced
-          <strong>“Reply to | 4 files”</strong> so users always knew what the assistant was analysing — especially helpful
-          when switching contexts inside large databases.
-        </p>
+  <!-- Templates -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Decision</div>
+    </div>
+    <div class="col-sm-6">
+      <h3>Templates</h3>
+      <p class="mt-3">
+        Templates provided a structured canvas for building deliverables with saved insights.
+        The intent was to reduce the blank-page problem while keeping outputs editable and defensible.
+      </p>
+
+      <h5 class="mt-4">Trade-offs</h5>
+      <ul class="mt-3">
+        <li><p class="subtitle">Chose flexible structure over rigid “report builder” rules to match how research evolves</p></li>
+        <li><p class="subtitle">Optimised for assembling and editing content first; automation could be layered later (explorations below)</p></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img src="img/Template3.jpg" class="img-fluid" alt="Template feature iteration 1" />
       </div>
     </div>
 
-    <!-- Logic / reasoning -->
-    <div class="row mt-5">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="/img/UIprojectpagecitationsv3.svg" class="img-fluid" alt="Iteration of citations and logic pattern" />
-        </div>
+    <div class="col-sm-12 mt-4">
+      <div class="mosaiq_img">
+        <img src="img/Template4.jpg" class="img-fluid" alt="Template feature iteration 2" />
       </div>
     </div>
 
-    <div class="row mt-4">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <p>
-          We iterated on “reasoning visibility.” The <strong>Logic</strong> CTA became the right balance:
-          available when needed, but not always visible (to avoid noise and preserve conversational flow).
-        </p>
-        <p>
-          Reasoning lives in the chat because it’s part of the interaction — not separate documentation.
-        </p>
+    <div class="col-sm-12 mt-4">
+      <div class="mosaiq_img">
+        <img src="img/Template5.jpg" class="img-fluid" alt="Template feature iteration 3" />
+      </div>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-6"></div>
+    <div class="col-sm-6">
+      <p>
+        Templates became the main path for report building: add sections, pull in saved insights, and refine the narrative into something publication-ready.
+      </p>
+    </div>
+  </div>
+
+  <!-- Exploration -->
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Exploration</div>
+    </div>
+    <div class="col-sm-6">
+      <h3>AI Modules + Templates (concept)</h3>
+      <p class="mt-3">
+        We explored pairing Templates with Modules: each template section becomes a prompt linked to a module.
+        When invoked, the deliverable keeps its structure while sections are auto-populated by the AI.
+      </p>
+      <p class="subtitle"><i>This is an exploration and was not developed.</i></p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img src="img/modulestemplates2.svg" class="img-fluid" alt="Modules + templates concept iteration 1" />
       </div>
     </div>
 
-    <!-- Reply threading -->
-    <div class="row mt-5">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="/img/assistant_reply.svg" class="img-fluid" alt="Reply feature enabling follow-up questions on a specific answer segment" />
-        </div>
+    <div class="col-sm-12 mt-4">
+      <div class="mosaiq_img">
+        <img src="img/AITemplates.svg" class="img-fluid" alt="Modules + templates concept iteration 2" />
       </div>
     </div>
+  </div>
 
-    <div class="row mt-4">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <p>
-          To support focused follow-ups, we added a <strong>Reply</strong> interaction so users could ask about a specific segment
-          of an answer without losing the thread.
-        </p>
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <div class="overline">Exploration</div>
+    </div>
+    <div class="col-sm-6">
+      <h3>Iterating on a flexible canvas</h3>
+      <p class="mt-3">
+        Another direction explored a modular “tiles” canvas to better match how people assemble narratives:
+        move pieces, group themes, and evolve report structure as research changes.
+      </p>
+    </div>
+  </div>
+
+  <div class="row mt-4">
+    <div class="col-sm-12">
+      <div class="mosaiq_img">
+        <img src="img/tiles.svg" class="img-fluid" alt="Tiles-based canvas exploration" />
       </div>
     </div>
+  </div>
 
-    <!-- Citations -->
-    <div class="row mt-5">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="/img/UIprojectpagecitations.svg" class="img-fluid" alt="Citation bubble showing text context from source" />
-        </div>
-      </div>
+  <!-- Back to top -->
+  <div class="arrow_top mt-5 text-end">
+    <a href="#top">Back to the top <i class="bi bi-arrow-up-square top"></i></a>
+  </div>
 
-      <div class="col-sm-12 mt-4">
-        <div class="mosaiq_img">
-          <img src="/img/chart.png" class="img-fluid" alt="Citation bubble showing chart context from source" />
-        </div>
-      </div>
+  <div class="divider"></div>
 
-      <div class="col-sm-12 mt-4">
-        <div class="mosaiq_img">
-          <img src="/img/graph.png" class="img-fluid" alt="Citation bubble showing graph context from source" />
-        </div>
-      </div>
+  <div class="project_nav mt-5">
+    <div class="arrow_left">
+      <a href="/mosaiq_labs.html">
+        <i class="bi bi-arrow-left-square top"></i> Back to case study summary
+      </a>
     </div>
+  </div>
+</main>
 
-    <div class="row mt-4">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <p>
-          As output quality increased, source verification became non-negotiable. Citations were expanded to support both text and
-          non-text data — and tuned for “quick context”, not tiny excerpts.
-        </p>
-        <ul class="mt-3">
-          <li><p class="subtitle">Larger citation bubbles for more readable context</p></li>
-          <li><p class="subtitle">Support for charts, graphs, and tables</p></li>
-          <li><p class="subtitle"><strong>View in source</strong> to restore the full context of the claim</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="divider mt-5"></div>
-
-    <!-- ========================= -->
-    <!-- CASE STUDY 3: DELIVERABLES -->
-    <!-- ========================= -->
-    <div class="row mt-5">
-      <div class="col-sm-6">
-        <div class="overline">Case study</div>
-      </div>
-      <div class="col-sm-6">
-        <h3>Turning research into deliverables</h3>
-        <p class="mt-3">
-          As MosaiQ matured, the workflow expanded beyond answering questions. Customers needed consistent, repeatable outputs:
-          reports, memos, and stakeholder-ready summaries.
-        </p>
-      </div>
-    </div>
-
-    <!-- AI Modules -->
-    <div class="row mt-5">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <h3>AI Modules</h3>
-        <p class="mt-3">
-          AI Modules are pre-configured tasks: a structured set of instructions that produce a consistent output (e.g., “X Report”).
-          They reduced time spent rewriting prompts and improved repeatability across teams.
-        </p>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="/img/InvokeAIModules.svg" class="img-fluid" alt="Invoking an AI Module from the assistant" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Review -->
-    <div class="review_section mt-5">
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="/img/review_light.svg" alt="Quotation marks icon for review section" class="review" />
-        </div>
-        <div class="col-sm-6">
-          <div class="review_text">
-            <h3>“The perfect companion throughout my research & report-building process.”</h3>
-            <p>
-              “Working in market research means juggling vast amounts of data. MosaiQ helped me centralise it. Whether I'm passively
-              building understanding or actively preparing a report, the platform keeps me steps ahead.”
-            </p>
-            <p class="text-end"><strong><i>Carlos, Research Coordinator — Market Research</i></strong></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Templates -->
-    <div class="row mt-5">
-      <div class="col-sm-6">
-        <div class="overline">Case study</div>
-      </div>
-      <div class="col-sm-6">
-        <h3>Templates</h3>
-        <p class="mt-3">
-          Templates provided a structured canvas for assembling deliverables. Users could add sections and fill them with saved
-          insights and validated content — reducing the blank-page problem.
-        </p>
-
-        <h5 class="mt-4">How might we…</h5>
-        <ul class="mt-3">
-          <li><p class="subtitle">Offer a flexible space where users can structure deliverables in a way that matches their thinking?</p></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="img/Template3.jpg" class="img-fluid" alt="Template feature iteration 1" />
-        </div>
-      </div>
-
-      <div class="col-sm-12 mt-4">
-        <div class="mosaiq_img">
-          <img src="img/Template4.jpg" class="img-fluid" alt="Template feature iteration 2" />
-        </div>
-      </div>
-
-      <div class="col-sm-12 mt-4">
-        <div class="mosaiq_img">
-          <img src="img/Template5.jpg" class="img-fluid" alt="Template feature iteration 3" />
-        </div>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-6"></div>
-      <div class="col-sm-6">
-        <p>
-          Templates became the main path for report building: add sections, pull in saved insights, and refine the final narrative
-          into something publication-ready.
-        </p>
-      </div>
-    </div>
-
-    <!-- Modules + Templates concept -->
-    <div class="row mt-5">
-      <div class="col-sm-6">
-        <div class="overline">Exploration</div>
-      </div>
-      <div class="col-sm-6">
-        <h3>AI Modules + Templates (concept)</h3>
-        <p class="mt-3">
-          We explored pairing Templates with Modules: each template section becomes a prompt linked to a module. When invoked, the
-          deliverable keeps the template structure while sections are auto-populated by the AI.
-        </p>
-        <p class="subtitle"><i>This is an exploration and was not developed.</i></p>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="img/modulestemplates2.svg" class="img-fluid" alt="Modules + templates concept iteration 1" />
-        </div>
-      </div>
-
-      <div class="col-sm-12 mt-4">
-        <div class="mosaiq_img">
-          <img src="img/AITemplates.svg" class="img-fluid" alt="Modules + templates concept iteration 2" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Flexible canvas exploration -->
-    <div class="row mt-5">
-      <div class="col-sm-6">
-        <div class="overline">Exploration</div>
-      </div>
-      <div class="col-sm-6">
-        <h3>Iterating on a flexible canvas</h3>
-        <p class="mt-3">
-          Another direction explored a modular “tiles” canvas to better match how people assemble narratives:
-          move pieces, group themes, and evolve report structure as research changes.
-        </p>
-      </div>
-    </div>
-
-    <div class="row mt-4">
-      <div class="col-sm-12">
-        <div class="mosaiq_img">
-          <img src="img/tiles.svg" class="img-fluid" alt="Tiles-based canvas exploration" />
-        </div>
-      </div>
-    </div>
-
-    <!-- ARROW UP -->
-    <div class="arrow_top mt-5 text-end">
-      <a href="#top">Back to the top <i class="bi bi-arrow-up-square top"></i></a>
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- BOTTOM NAVIGATION (optional: aligns with other pages) -->
-    <div class="project_nav mt-5">
-      <div class="arrow_left">
-        <a href="/mosaiq_labs.html">
-          <i class="bi bi-arrow-left-square top"></i> Back to case study summary
-        </a>
-      </div>
-    </div>
-  </main>
 
   <footer class="footer mt-5">
     <div class="copyright text-center">
