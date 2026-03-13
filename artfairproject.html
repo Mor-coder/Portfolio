@@ -133,13 +133,15 @@
         <div class="col-sm-6"><div class="overline">Summary</div></div>
         <div class="col-sm-6">
           <p>
-            During my earlier experience working with galleries at art fairs such as PAD London, I observed how much of the collector preview and sales process relied on fragmented and manual tools. Artwork information was typically shared through PDFs, email threads, and spreadsheets, making it difficult for both galleries and collectors to navigate and manage interest clearly.
+            During my earlier experience working with galleries at art fairs such as PAD London, I observed how much of the collector preview and sales process relied on fragmented and manual tools. Artwork information was typically shared through PDFs, email threads, and spreadsheets, making it difficult for both galleries and collectors to navigate and manage interest clearly.          </p>
+          <p>
+            These tools worked, but often required constant back-and-forth communication and manual tracking, especially during the intense pace of an art fair.         
+         </p>
+          <p>
+            I explored how a dedicated digital platform could support galleries in presenting artworks, managing collector enquiries, and facilitating sales in a way that remains aligned with the tone and sensitivity of the art world.        
           </p>
           <p>
-            I explored how a dedicated digital platform could support galleries in presenting artworks, managing collector enquiries, and facilitating sales in a way that feels aligned with the pace and sensitivity of the art fair environment.
-          </p>
-          <p>
-            This project focuses on designing a platform that supports both collectors and gallery teams during a fair.
+            This project focuses on designing a platform that supports both collectors and gallery teams during an art fair.
           </p>
         </div>
       </div>
@@ -264,8 +266,10 @@
         <div class="row mt-5">
             <div class="col-sm-6"><div class="overline">Keen screen: Collector preview</div></div>
             <div class="col-sm-6">
-                <p>Collectors access a personalised preview space where they can browse all available works presented by the gallery at the fair.</p>
+                <p>While designing this page, I considered a behaviour I frequently observed during art fairs: collectors often revisit works they previously liked.</p>
+                <p>To support this, collectors access a personalised preview space where they can browse all available works presented by the gallery at the fair, and they can save artworks. Saved works appear at the top of the preview list during future visits, allowing collectors to quickly relocate pieces of interest without searching again.</p>
                 <p>The grid layout allows easy comparison while maintaining a calm and minimal visual structure.</p>
+                <p>This small interaction helps reduce friction during repeated visits to the preview environment.</p>
             </div>
           </div>
 
@@ -282,40 +286,69 @@
         <div class="col-sm-6"><div class="overline">Keen screen: Artwork detail page</div></div>
         <div class="col-sm-6">
            <p>The artwork page is the core of the experience.</p> 
-           <p>Collectors can view:</p>
+           <p>When collectors first express interest in an artwork, they typically look for a small set of key details:</p>
+           <ul>
+            <li>
+                <p>year of production</p>
+            </li>
+            <li>
+                <p>medium</p>
+            </li>
+            <li>
+                <p>dimensions</p>
+            </li>
+            <li>
+                <p>edition information</p>
+            </li>
+           </ul>
+
+           <p>These details are usually the first criteria collectors evaluate before engaging further.</p>
+           <p>For this reason, the design separates essential artwork information from secondary content.</p>
+           
+           <p>The top section of the page contains:</p>
            <ul>
             <li>
                 <p>high-resolution artwork image</p>
             </li>
             <li>
-                <p>artist, title, medium, and dimensions</p>
+                <p>artist name and artwork title</p>
+            </li>
+            <li>
+                <p>key metadata such as year, medium, and dimensions</p>
             </li>
             <li>
                 <p>price or price on request</p>
             </li>
             <li>
-                <p>provenance and exhibition history</p>
-            </li>
-            <li>
-                <p>current availability</p>
+                <p>enquiry and reservation actions</p>
             </li>
            </ul>
-           <p>They can also:</p>
+
+           <p>Additional information is organised into tabs below the main content.</p>
+           <p>These tabs contain:</p>
            <ul>
             <li>
-                <p>submit an enquiry</p>
+                <p>artist's biography</p>
             </li>
             <li>
-                <p>request a hold</p>
+                <p>exhibition history</p>
             </li>
             <li>
-                <p>save the work for later</p>
+                <p>provenance</p>
             </li>
             <li>
-                <p>be notified when a similar artwork becomes available</p>
+                <p>shipping and tax information</p>
             </li>
            </ul>
-           <p>The layout prioritises the artwork visually, with supporting information presented clearly but quietly.</p>
+           <p>
+            This structure allows collectors to access deeper information when needed while keeping the initial view focused and uncluttered.
+           </p>
+           <p>
+            Another behaviour I frequently observed while working at art fairs is the tendency for collectors and advisors to share works with partners or clients before making a decision.
+           </p>
+           <p>
+            To support this, a share option is placed directly beneath the artwork image, allowing users to quickly send the artwork to someone else. This small feature can help accelerate conversations and potentially shorten the sales process.
+           </p>
         </div>
       </div>
 
@@ -340,7 +373,10 @@
       <div class="row mt-5">
         <div class="col-sm-6"><div class="overline">Keen screen: Gallery dashboard</div></div>
         <div class="col-sm-6">
-            <p>On the gallery side, the dashboard allows staff to:</p>
+            <p>
+                On the gallery side, the dashboard supports the operational reality of managing sales during a fast-paced fair.
+            </p>
+            <p>Gallery staff can:</p>
             <ul>
                 <li>
                     <p>view all artworks in the fair</p>
@@ -353,7 +389,26 @@
                 </li>
             </ul>
             <p>This supports the operational reality of managing sales during a fast-paced fair.</p>
-        </div>
+        <p>One of the challenges I frequently experienced while working in galleries was locating specific works within large databases — particularly when artworks shared similar titles such as Untitled.</p>
+        <p>
+            Often the only distinguishing information was the medium, size, or edition.
+        </p>
+        <p>
+            To address this, the artwork database includes filtering options that allow staff to quickly narrow down results based on attributes such as medium, artist, or edition.
+        </p>
+        <p>
+            This reduces the time needed to locate a specific work when speaking to a collector in person or over the phone.
+        </p>
+        <p>
+            Artwork cards also display availability using both colour and text labels, improving accessibility and ensuring that the status of a work is immediately visible.
+        </p>
+        <p>
+            Staff can update a work’s status directly from the dashboard, changing it from available to reserved or sold without needing to open the artwork page.
+        </p>
+        <p>
+            This allows galleries to respond quickly when sales occur in person at the fair.
+        </p>
+    </div>
       </div>
 
       <div class="row mt-5">
@@ -369,18 +424,20 @@
           <div class="row mt-5">
             <div class="col-sm-6"><div class="overline">Keen screen: Collector page</div></div>
             <div class="col-sm-6">
-                <p>On the gallery side, the dashboard allows staff to:</p>
+                <p>The collector profile provides a structured overview of interactions with a collector.</p>
+                <p>From this view, galleries can:</p>
                 <ul>
                     <li>
-                        <p>keep record of order history</p>
+                        <p>track enquiry history</p>
                     </li>
                     <li>
-                        <p>track collector enquiries</p>
+                        <p>view previous purchases</p>
                     </li>
                     <li>
-                        <p>develop new leads based on the collector's interest</p>
+                        <p>identify artworks that the collector has shown interest in</p>
                     </li>
                 </ul>
+                <p>This helps galleries build a clearer understanding of collector preferences and supports future outreach.</p>
             </div>
           </div>
 
@@ -408,7 +465,7 @@
         <div class="col-sm-6">
             <p>Working on this project allowed me to connect my background in commercial galleries with my product design practice. </p>
             <p>Having experienced these environments directly, I was able to approach the design with an understanding of both the practical workflows and the importance of presenting artworks in a way that feels appropriate and respectful.</p>
-            <p>It reinforced my interest in designing tools that support cultural contexts and complex information environments.</p>
+            <p>The project reinforced my interest in designing tools that support cultural contexts and complex information environments.</p>
             <p class="mt-3">I’m particularly interested in continuing to work on platforms that support galleries, artists, and collectors, and that help bring clarity and accessibility to the art ecosystem.</p>
         </div>
       </div>
