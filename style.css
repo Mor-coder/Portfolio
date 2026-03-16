@@ -204,6 +204,7 @@
     color: transparent;
   }
 
+
   .img_container {
     margin-top: 10%;
     margin-bottom: 10%;
@@ -388,57 +389,15 @@ text-decoration: overline;
   color: #D4500E;
 }
 
-.index_number, 
-.bi-1-square, 
-.bi-2-square, 
-.bi-3-square,
-.bi-4-square {
-  color: #D4500E;
+.artfairproject {
+  margin-top: 16%;
+  margin-bottom: 16%;
 }
 
 
-#summary {
-  display: flex;
-  justify-content: space-between;
-margin-top: 10%;
-}
 
-#designing_the_assistant, 
-#challenges,
-#notes,
-#buttons,
-#tabs,
-#icons, 
-#cards, 
-#menus,
-#UIexplanation,
-#AIModules,
-#templates,
-#modulestemplates,
-#research,
-#affinity_diagram,
-#user_journey,
-#sketches,
-#prototype {
-  display: flex;
-  justify-content: space-between;
-}
 
-.tabs_list, 
-.icons_list {
-  text-align: start;
-  list-style: none;
-}
 
-.UIexplanation {
-  display: block;
-  margin: 0 auto;
-  padding: 24px;
-}
-
-.yogauxlist {
-  list-style:none;
-}
   
   .fas,
   .fab {
@@ -639,4 +598,8 @@ a[href="#full-case-study"]:hover {
   .review_section {
     padding: 2rem 1.25rem;
   }
+}
+
+.footer {
+  margin-top: 10%;
 }
