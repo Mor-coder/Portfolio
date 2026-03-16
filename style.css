@@ -57,18 +57,7 @@
       font-weight: 700;
       font-family: var(--title-font);
     
-      background: linear-gradient(
-        90deg,
-        #320A28 0%,
-        #651451 45%,
-        #B28AA8 65%,
-        #ffffff 100%
-      );
-    
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      color: transparent;
+      color: #320A28;
     }
 
   h2 {
@@ -154,11 +143,6 @@
     padding: 24px;
     margin: 0 auto;
     margin-bottom: 6rem;
-  }
-
-  .intro_projects_text_title {
-    font-family: var(--title-font);
-    color: var(--title-color);
   }
 
   .projects_section {
