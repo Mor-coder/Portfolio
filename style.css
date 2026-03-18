@@ -32,8 +32,6 @@ a {
   font-family: var(--branding-font);
 }
 
-/* Base */
-
 body {
   margin: 0;
   font-family: var(--branding-font);
@@ -60,8 +58,6 @@ p {
   max-width: 1200px;
 }
 
-/* Navigation */
-
 .navbar {
   padding: 1.5rem 0 2rem;
   background: transparent;
@@ -73,7 +69,7 @@ p {
 
 .nav-link {
   font-size: 0.95rem;
-  color: var(--text-color);
+  color: var(--links);
   margin-left: 1rem;
   padding-left: 0.4rem !important;
   padding-right: 0.4rem !important;
@@ -83,8 +79,6 @@ p {
 .nav-link.active {
   color: var(--links);
 }
-
-/* Intro */
 
 .intro {
   padding: var(--space-lg) 0 var(--space-xl);
@@ -109,8 +103,6 @@ p {
   max-width: 34rem;
   margin-bottom: 0;
 }
-
-/* Typography */
 
 .project_title {
   font-family: var(--title-font);
@@ -145,7 +137,8 @@ p {
   margin-bottom: 0.3rem;
 }
 
-.project-heading {
+.project-heading,
+.card-subtitle {
   font-family: var(--branding-font);
   font-size: 1.15rem;
   font-weight: 500;
@@ -154,13 +147,18 @@ p {
   color: var(--text-color);
 }
 
-.meta_line {
+.meta_line,
+.card-detail {
   font-size: 0.9rem;
   color: var(--subtitle);
   margin-bottom: 0.4rem;
 }
 
-/* Index page: featured projects layout */
+.card-meta {
+  margin-bottom: 0.5rem;
+}
+
+/* Index */
 
 .featured-projects-wrapper {
   background-color: #f3f2f7;
@@ -206,23 +204,28 @@ p {
   margin-top: var(--space-md);
 }
 
-/* Index page stacked cards (.project-card) */
+/* Shared card base */
 
 .project-card {
   background: #fcfbf8;
   border: 1px solid rgba(50, 10, 40, 0.08);
   border-radius: 24px;
-  padding: 1.25rem;
+  padding: 1.5rem;
   box-shadow: var(--box-shadow);
   transition: transform 0.25s ease, box-shadow 0.25s ease,
     border-color 0.25s ease;
-  overflow: hidden;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.14);
   border-color: rgba(50, 10, 40, 0.16);
+}
+
+/* Homepage stacked cards */
+
+.project-card--stacked {
+  overflow: hidden;
 }
 
 .project-card-image-link {
@@ -238,7 +241,7 @@ p {
   transition: transform 0.35s ease;
 }
 
-.project-card:hover .project-card-image {
+.project-card--stacked:hover .project-card-image {
   transform: scale(1.03);
 }
 
@@ -249,22 +252,28 @@ p {
 }
 
 .project-card-featured {
-  padding: 1.5rem;
+  padding: 1.75rem;
+  border-color: rgba(50, 10, 40, 0.14);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
 }
 
 .project-card-featured .project-card-image {
-  height: 340px;
+  height: 320px;
 }
 
 .project-card-featured .card-title {
-  font-size: 1.8rem;
+  font-size: 1.75rem;
 }
 
 .project-card-featured .project-heading {
-  font-size: 1.25rem;
+  font-size: 1.22rem;
 }
 
-.project-card .btn_read_more {
+.project-card-featured .overline {
+  color: var(--links);
+}
+
+.project-card--stacked .btn_read_more {
   margin-top: 0.5rem;
 }
 
@@ -304,6 +313,267 @@ p {
 .backlink {
   margin: var(--space-sm) 0 var(--space-md);
 }
+
+/* About page */
+
+.about-page-intro {
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.about-page-hero {
+  margin-bottom: var(--space-xl);
+}
+
+.about-page-panel {
+  background-color: #f3f2f7;
+  border-radius: 32px;
+  padding: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.about-images-section {
+  margin-bottom: var(--space-xl);
+}
+
+/* About page imgs */ 
+
+.about-hero-image {
+  width: 100%;
+  max-height: 780px;
+  object-fit: cover;
+  border-radius: 28px;
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+.about-image-card {
+  background: #fcfbf8;
+  border: 1px solid rgba(50, 10, 40, 0.06);
+  border-radius: 24px;
+  padding: 1rem;
+
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.10);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-image-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.14);
+}
+
+.about-supporting-image {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* Case studies */ 
+
+   .case-study-page {
+    padding-bottom: var(--space-xl);
+  }
+  
+  .case-study-hero {
+    padding: var(--space-md) 0 var(--space-lg);
+  }
+  
+  .project_subtitle {
+    font-size: 1.1rem;
+    color: var(--subtitle);
+    max-width: 52rem;
+    margin-bottom: 0;
+  }
+  
+  .case-study-hero-media {
+    margin-bottom: var(--space-xl);
+  }
+  
+  .case-study-hero-image {
+    width: 100%;
+    max-height: 760px;
+    object-fit: cover;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  }
+  
+  .case-study-panel {
+    background-color: #f3f2f7;
+    border-radius: 32px;
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+  }
+  
+  .case-study-section + .case-study-section {
+    margin-top: var(--space-lg);
+  }
+  
+  .case-study-meta-row {
+    padding: 1.5rem 0;
+    border-top: 1px solid rgba(50, 10, 40, 0.08);
+  }
+  
+  .case-study-meta-row:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  
+  .case-study-body-copy {
+    max-width: 44rem;
+  }
+  
+  .case-study-body-copy ul {
+    padding-left: 1.2rem;
+    margin-bottom: 0;
+  }
+  
+  .case-study-body-copy li + li {
+    margin-top: 0.5rem;
+  }
+  
+  /* Screen showcase */
+  
+  .screen-showcase {
+    margin-top: var(--space-lg);
+  }
+  
+  .screen-card {
+    background: #fcfbf8;
+    border: 1px solid rgba(50, 10, 40, 0.08);
+    border-radius: 24px;
+    padding: 1.25rem;
+    box-shadow: var(--box-shadow);
+    margin-bottom: var(--space-lg);
+  }
+  
+  .screen-card-header {
+    margin-bottom: 1.25rem;
+  }
+  
+  .screen-label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--subtitle);
+    margin-bottom: 0.75rem;
+  }
+  
+  .screen-title {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--title-color);
+    margin-bottom: 0.5rem;
+  }
+  
+  .screen-description {
+    color: var(--text-color);
+    max-width: 42rem;
+    margin-bottom: 0;
+  }
+  
+  .screen-media-wrap {
+    background: #ffffff;
+    border: 1px solid rgba(50, 10, 40, 0.06);
+    border-radius: 20px;
+    padding: 1rem;
+    overflow: hidden;
+  }
+  
+  .screen-media {
+    width: 100%;
+    border-radius: 14px;
+    display: block;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  }
+  
+  .screen-note {
+    font-size: 0.95rem;
+    color: var(--subtitle);
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  
+  /* Embedded prototype */
+  
+  .embed-card iframe {
+    width: 100%;
+    min-height: 520px;
+    border: 0;
+    border-radius: 16px;
+  }
+  
+  /* Dividers / nav */
+  
+  .divider {
+    border-top: 1px solid rgba(50, 10, 40, 0.1);
+  }
+  
+  .project_nav {
+    gap: 1rem;
+  }
+  
+  .project_nav a,
+  .arrow_top a,
+  .arrow_right a,
+  .arrow_left a {
+    color: var(--links);
+  }
+  
+  .project_nav a:hover,
+  .arrow_top a:hover,
+  .arrow_right a:hover,
+  .arrow_left a:hover {
+    opacity: 0.75;
+  }
+  
+  /* Responsive */
+  
+  @media (max-width: 991.98px) {
+    .case-study-panel {
+      padding: 2rem;
+      border-radius: 24px;
+    }
+  
+    .case-study-hero-image {
+      border-radius: 24px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .case-study-hero {
+      padding: 2rem 0 3rem;
+    }
+  
+    .case-study-panel {
+      padding: 1.25rem 1rem;
+      border-radius: 20px;
+    }
+  
+    .case-study-hero-image {
+      border-radius: 18px;
+    }
+  
+    .screen-card {
+      padding: 1rem;
+      border-radius: 20px;
+    }
+  
+    .screen-media-wrap {
+      padding: 0.75rem;
+      border-radius: 16px;
+    }
+  
+    .screen-title {
+      font-size: 1.2rem;
+    }
+  
+    .embed-card iframe {
+      min-height: 360px;
+    }
+  }
 
 /* Footer */
 
@@ -349,12 +619,16 @@ p {
     border-radius: 24px;
   }
 
-  .project_card {
+  .project-card {
     padding: 1.5rem;
   }
 
-  .project-card {
+  .project-card-featured {
     padding: 1.5rem;
+  }
+
+  .project-card-featured .project-card-image {
+    height: 280px;
   }
 }
 
@@ -378,11 +652,6 @@ p {
     border-radius: 20px;
   }
 
-  .project_card {
-    padding: 1.25rem;
-    border-radius: 20px;
-  }
-
   .project-card {
     padding: 1.25rem;
     border-radius: 20px;
@@ -391,6 +660,18 @@ p {
   .project-card-image {
     height: 220px;
     border-radius: 14px;
+  }
+
+  .project-card-featured .project-card-image {
+    height: 240px;
+  }
+
+  .project-card-featured .card-title {
+    font-size: 1.55rem;
+  }
+
+  .project-card-featured .project-heading {
+    font-size: 1.1rem;
   }
 
   .nav-link {
